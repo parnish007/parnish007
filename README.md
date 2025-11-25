@@ -1,4 +1,4 @@
-<h2 align="center">Hi 👋! I'm Parnish, an AI & Full Stack Developer from Nepal</h2>
+<h2 align="center">Hi 👋! I'm Parnish, an AI & ML  enthusiast from Nepal</h2>
 
 
 
