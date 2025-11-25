@@ -1,5 +1,13 @@
-<h1 align="center">Hi 👋, I'm Parnish</h1>
-<h3 align="center">AI & Full Stack Developer | ML & Data Science Enthusiast | Cyberpunk Coder</h3>
+<h2 align="center">Hi 👋! I'm Parnish, an AI & Full Stack Developer from Nepal</h2>
+
+---
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=parnish007&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false" height="150" alt="GitHub Stats"  />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=parnish007&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false" height="150" alt="Top Languages"  />
+</div>
+
+---
 
 <p align="center">
   <img src="https://images.squarespace-cdn.com/content/v1/5769fc401b631bab1addb2ab/1541580611624-TE64QGKRJG8SWAIUS7NS/ke17ZwdGBToddI8pDm48kPoswlzjSVMM-SxOp7CV59BZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PI6FXy8c9PWtBlqAVlUS5izpdcIXDZqDYvprRqZ29Pw0o/coding-freak.gif" 
@@ -12,64 +20,62 @@
 
 ## 💻 My Skills
 
-<p align="center">
+<div align="center">
   <!-- Programming Languages -->
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
-  <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
-  <img src="https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
-  <img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" alt="Python" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" height="40" alt="C++" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" height="40" alt="C" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="JavaScript" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="HTML5" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="CSS3" />
 
-  <!-- AI / ML Frameworks -->
-  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
-  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" />
-  <img src="https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white" />
-  <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" />
-  <img src="https://img.shields.io/badge/XGBoost-FF6600?style=for-the-badge&logo=xgboost&logoColor=white" />
-  <img src="https://img.shields.io/badge/LightGBM-00A550?style=for-the-badge&logo=lightgbm&logoColor=white" />
+  <!-- AI / ML / Data Science -->
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" height="40" alt="PyTorch" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" height="40" alt="TensorFlow" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/keras/keras-original.svg" height="40" alt="Keras" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikit-learn/scikit-learn-original.svg" height="40" alt="Scikit-learn" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" height="40" alt="NumPy" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" height="40" alt="Pandas" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg" height="40" alt="Matplotlib" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/seaborn/seaborn-original.svg" height="40" alt="Seaborn" />
 
-  <!-- Data Analysis & Visualization -->
-  <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" />
-  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" />
-  <img src="https://img.shields.io/badge/Matplotlib-D73B3E?style=for-the-badge&logo=matplotlib&logoColor=white" />
-  <img src="https://img.shields.io/badge/Seaborn-4C6FFF?style=for-the-badge&logo=seaborn&logoColor=white" />
-  <img src="https://img.shields.io/badge/Plotly-3F4C6B?style=for-the-badge&logo=plotly&logoColor=white" />
-  <img src="https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white" />
-
-  <!-- Web & Database -->
-  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" />
-  <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" />
-  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" />
-  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
-  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" />
-</p>
-
----
-
-## 🌌 About Me
-- Passionate about **AI, Deep Learning, and Data Science**  
-- Skilled in **Python, ML/DL frameworks, C++, JS, and Full Stack Web Development**  
-- Experienced in **data analysis, visualization, and cloud integration**  
-- Love blending **AI + Web + Visualizations** to make interactive, futuristic projects  
-- Constantly exploring new tools to **future-proof my skills**  
+  <!-- Web & DB -->
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" height="40" alt="MongoDB" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" height="40" alt="Express.js" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="40" alt="Node.js" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="40" alt="React" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" height="40" alt="Next.js" />
+</div>
 
 ---
 
 ## 📫 Connect with Me
-<p align="center">
+
+<div align="center">
   <a href="https://www.linkedin.com/in/trilochan-sharma-995851370/" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+    <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="LinkedIn"  />
   </a>
   <a href="https://twitter.com/parnish007" target="_blank">
-    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" />
+    <img src="https://img.shields.io/static/v1?message=Twitter&logo=twitter&label=&color=1DA1F2&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="Twitter"  />
+  </a>
+  <a href="mailto:youremail@example.com" target="_blank">
+    <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="Gmail"  />
   </a>
   <a href="https://github.com/parnish007" target="_blank">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
+    <img src="https://img.shields.io/static/v1?message=GitHub&logo=github&label=&color=181717&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="GitHub"  />
   </a>
-</p>
+</div>
 
 ---
 
+<br clear="both">
+
+<img src="https://raw.githubusercontent.com/parnish007/parnish007/output/snake.svg" alt="Snake animation" />
+
+
 ### 🌠 Fun Fact
-I like my code **neon, futuristic, and AI-powered** ✨  
+Curiosity is what drives me. I’m deeply passionate about AI, ML, and every technology that pushes boundaries forward. I’m drawn to challenging problems, and I enjoy building solutions end-to-end — from understanding the problem to crafting clean, efficient implementations.
+
+I continuously expand my skill set across full-stack development, Linux, IoT, version control, and modern software design principles. I believe in learning with discipline, staying adaptable, and always striving to become better than I was yesterday.
+
+I value leadership, teamwork, and meaningful impact. My long-term goal is to contribute to innovative AI/ML solutions, grow as a strong technical leader, and help shape technologies that make a real difference.
