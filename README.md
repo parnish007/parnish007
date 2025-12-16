@@ -135,11 +135,31 @@
 
 ---
 
+---
+
 ## 📂 Projects
-| Project | Type | Description | Link |
-|---------|------|-------------|------|
-| LFFTT | Web Dev | Full-stack project with React & Node.js | [Repo](https://github.com/parnish007/lfftt) |
-| DA_project | Data Science | Data Analysis & Visualization project | [Repo](https://github.com/parnish007/DA_project) |
+
+### 🔹 Machine Learning
+| Project                      | Description                                                                                                                        | Link                                                            |
+| ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
+| Customer Churn Prediction    | End-to-end ML pipeline predicting customer churn; includes data preprocessing, modeling, evaluation & deployment                   | [Repo](https://github.com/parnish007/customer-churn-prediction) |
+| Student Placement Prediction | End-to-end ML system predicting student placement using IQ, CGPA, skills, and internship experience; includes Streamlit deployment | [Repo](https://github.com/parnish007/student_placement_project) |
+
+
+### 🔹 Data Science
+
+| Project    | Description                                                                  | Link                                             |
+| ---------- | ---------------------------------------------------------------------------- | ------------------------------------------------ |
+| DA_project | Data analysis and visualization project demonstrating insights from datasets | [Repo](https://github.com/parnish007/DA_project) |
+
+### 🔹 Web Development
+
+| Project | Description                                           | Link                                        |
+| ------- | ----------------------------------------------------- | ------------------------------------------- |
+| LFFTT   | Full-stack web application built with React & Node.js | [Repo](https://github.com/parnish007/lfftt) |
+
+---
+
 
 ---
 
