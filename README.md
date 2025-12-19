@@ -139,12 +139,11 @@
 
 ## 📂 Projects
 
-### 🔹 Machine Learning
-| Project                      | Description                                                                                                                        | Link                                                            |
-| ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
-| Customer Churn Prediction    | End-to-end ML pipeline predicting customer churn; includes data preprocessing, modeling, evaluation & deployment                   | [Repo](https://github.com/parnish007/customer-churn-prediction) |
-| Student Placement Prediction | End-to-end ML system predicting student placement using IQ, CGPA, skills, and internship experience; includes Streamlit deployment | [Repo](https://github.com/parnish007/student_placement_project) |
-
+| Project                                             | Description                                                                                                                                                                                                                                         | Link                                                                                  |
+| --------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| **Intelligent Product Pitch Recommendation System** | Advanced ML solution recommending the best travel products to pitch to customers. Features single & bulk predictions, probability insights, CSV upload support, and a fully interactive Streamlit UI. Solves real-life sales optimization problems. | [Repo](https://github.com/parnish007/Intelligent-Product-Pitch-Recommendation-System) |
+| Student Placement Prediction                        | Complete ML system predicting student placement based on IQ, CGPA, skills, and internship experience. Includes EDA, model building, evaluation & Streamlit deployment. Helps educational institutions make proactive placement decisions.           | [Repo](https://github.com/parnish007/student_placement_project)                       |
+| Customer Churn Prediction                           | End-to-end ML pipeline to predict customer churn; includes data preprocessing, feature engineering, modeling, evaluation & deployment. Solves real-world business retention problems.                                                               | [Repo](https://github.com/parnish007/customer-churn-prediction)                       |
 
 ### 🔹 Data Science
 
