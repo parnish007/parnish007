@@ -138,6 +138,14 @@
 ---
 
 ## 📂 Projects
+### 🔹 Deep Learning
+
+| Project          | Description                                                                                                                                                                                                 | Link                                              |
+| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
+| **Scene Sorter** | Production-grade deep learning system for scene classification and smart image organization. Built using MobileNetV2 (transfer learning), FastAPI backend, and Next.js frontend. Supports single & batch inference, automatic folder sorting, and ZIP export. Achieved ~86–87% accuracy with optimized inference latency. | [Repo](https://github.com/parnish007/scene-sorter) |
+
+
+### 🔹 classical machine Learning
 
 | Project                                             | Description                                                                                                                                                                                                                                         | Link                                                                                  |
 | --------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
