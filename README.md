@@ -10,27 +10,29 @@
 ---
 
 ## 🔭 About Me
-- 🚀 Problem solver: Build **end-to-end solutions** across AI, ML, DL, NLP, Data Science, Web, App, and IoT  
-- 💡 Document my journey & practice consistently — projects, experiments, and learning  
-- 🌱 Lifelong learner: constantly **upskilling** in AI/ML, mathematics, and modern software  
-- 🥅 Goal: Contribute to **cutting-edge AI/ML research** and real-world solutions  
-- ⚡ Fun fact: I enjoy solving complex problems, experimenting with tech, and learning new frameworks  
+
+- 🚀 **Problem Solver**: Build end-to-end solutions across AI, ML, DL, NLP, Data Science, Web, App, and IoT
+- 💡 **Documentation & Practice**: Consistently document my journey through projects, experiments, and continuous learning
+- 🌱 **Lifelong Learner**: Constantly upskilling in AI/ML, mathematics, and modern software engineering
+- 🥅 **Mission**: Contribute to cutting-edge AI/ML research and develop real-world solutions that make an impact
+- ⚡ **Passion**: Solving complex problems, experimenting with emerging technologies, and mastering new frameworks
 
 ---
 
 ## 🔗 Connect with Me
+
 <p align="center">
   <a href="https://www.linkedin.com/in/trilochan-sharma-995851370/" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin" />
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
   <a href="https://twitter.com/parnish007" target="_blank">
-    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter" />
+    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter" />
   </a>
   <a href="mailto:parnishklpo@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail" />
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
   </a>
   <a href="https://github.com/parnish007">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github" />
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
   </a>
 </p>
 
@@ -38,152 +40,206 @@
 
 ## 🛠️ Skills & Tech Stack
 
-### **Mathematics / Foundations**
-- Linear Algebra, Calculus, Probability, Statistics, Discrete Math  
-- Graph Theory, Optimization, Mathematical Modeling  
+### **Mathematics & Foundations**
+Linear Algebra • Calculus • Probability & Statistics • Discrete Mathematics • Graph Theory • Optimization • Mathematical Modeling
 
 ---
 
 ### **Programming Languages**
+
 <div align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" height="40" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" height="40" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" alt="Python" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" height="40" alt="C++" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" height="40" alt="C" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="JavaScript" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="HTML5" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="CSS3" />
 </div>
 
 ---
 
-### **AI / Machine Learning**
-- Supervised & Unsupervised Learning, Feature Engineering, Model Evaluation, Pipeline Design  
-- **Libraries:**  
+### **AI & Machine Learning**
+
+**Core Skills**: Supervised & Unsupervised Learning • Feature Engineering • Model Evaluation • Pipeline Design • Hyperparameter Tuning
+
+**Libraries & Frameworks**:
+
 <div align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" height="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" height="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" height="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/keras/keras-original.svg" height="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" height="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" height="40"/>
-  <img src="https://img.shields.io/badge/matplotlib-F7931E?style=for-the-badge&logo=matplotlib&logoColor=white" height="40"/>
-  <img src="https://img.shields.io/badge/seaborn-4C6FFF?style=for-the-badge&logo=seaborn&logoColor=white" height="40"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" height="40" alt="Scikit-learn" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" height="40" alt="PyTorch" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" height="40" alt="TensorFlow" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/keras/keras-original.svg" height="40" alt="Keras" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" height="40" alt="NumPy" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" height="40" alt="Pandas" />
 </div>
+
+Matplotlib • Seaborn • Plotly
 
 ---
 
-### **Deep Learning & NLP (Learning)**
-- CNNs, RNNs, Transformers, GANs, LLM Applications  
-- NLP: Tokenization, Embeddings, HuggingFace, Text Classification  
+### **Deep Learning & NLP**
+
+**Deep Learning**: CNNs • RNNs • Transformers • GANs • LLM Applications • Transfer Learning
+
+**NLP**: Tokenization • Embeddings • Text Classification • Sentiment Analysis • Named Entity Recognition
+
+**Libraries**: PyTorch • TensorFlow • Keras • NLTK • spaCy • HuggingFace
+
 <div align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" height="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" height="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/keras/keras-original.svg" height="40"/>
-  <img src="https://img.shields.io/badge/nltk-5C3EE8?style=for-the-badge&logo=nltk&logoColor=white" height="40"/>
-  <img src="https://img.shields.io/badge/spacy-FF6600?style=for-the-badge&logo=spacy&logoColor=white" height="40"/>
-  <img src="https://img.shields.io/badge/huggingface-F00?style=for-the-badge&logo=huggingface&logoColor=white" height="40"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" height="40" alt="PyTorch" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" height="40" alt="TensorFlow" />
+  <img src="https://img.shields.io/badge/HuggingFace-FFD700?style=for-the-badge&logo=huggingface&logoColor=black" height="40" alt="HuggingFace" />
 </div>
 
 ---
 
 ### **Data Science & Analytics**
-- EDA, Statistical Analysis, Data Cleaning, Visualization, Feature Selection  
-<div align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg" height="40"/>
-  <img src="https://img.shields.io/badge/seaborn-4C6FFF?style=for-the-badge&logo=seaborn&logoColor=white" height="40"/>
-  <img src="https://img.shields.io/badge/plotly-3F4F7F?style=for-the-badge&logo=plotly&logoColor=white" height="40"/>
-  <img src="https://img.shields.io/badge/jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" height="40"/>
-  <img src="https://img.shields.io/badge/streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" height="40"/>
-</div>
 
+**Skills**: Exploratory Data Analysis (EDA) • Statistical Analysis • Data Cleaning • Advanced Visualization • Feature Selection
+
+**Tools**: Jupyter Notebook • Streamlit • Matplotlib • Seaborn • Plotly
+
+<div align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg" height="40" alt="Matplotlib" />
+  <img src="https://img.shields.io/badge/jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" height="40" alt="Jupyter" />
+  <img src="https://img.shields.io/badge/streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" height="40" alt="Streamlit" />
+</div>
 
 ---
 
 ### **Web Development**
-- Frontend: HTML, CSS, JavaScript, React, Next.js  
-- Backend: Node.js, Express.js, Django, Flask, REST APIs  
-- Database: MongoDB, PostgreSQL, MySQL, Redis  
+
+**Frontend**: HTML • CSS • JavaScript • React • Next.js
+
+**Backend**: Node.js • Express.js • Django • Flask • REST APIs • GraphQL
+
+**Databases**: MongoDB • PostgreSQL • MySQL • Redis
+
 <div align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" height="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" height="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" height="40"/>
-  <img src="https://img.icons8.com/color/40/000000/postgreesql.png"/>
-  <img src="https://img.icons8.com/color/40/000000/mysql-logo.png"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="40" alt="React" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" height="40" alt="Next.js" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="40" alt="Node.js" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" height="40" alt="Express.js" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" height="40" alt="MongoDB" />
+  <img src="https://img.icons8.com/color/40/000000/postgreesql.png" alt="PostgreSQL" />
+  <img src="https://img.icons8.com/color/40/000000/mysql-logo.png" alt="MySQL" />
 </div>
 
 ---
 
 ### **IoT & Cloud**
-- Raspberry Pi, Arduino, Sensor Integration, Data Pipelines  
-- Cloud: AWS, Azure  
+
+**IoT**: Raspberry Pi • Arduino • Sensor Integration • Data Pipelines • Edge Computing
+
+**Cloud Platforms**: AWS • Azure • GCP (Google Cloud Platform)
+
 <div align="center">
-  <img src="https://img.icons8.com/color/40/000000/amazon-web-services.png"/>
-  <img src="https://img.icons8.com/fluency/40/000000/azure-1.png"/>
+  <img src="https://img.icons8.com/color/40/000000/amazon-web-services.png" alt="AWS" />
+  <img src="https://img.icons8.com/fluency/40/000000/azure-1.png" alt="Azure" />
 </div>
 
 ---
 
-### **Developer Tools**
-- Git/GitHub, Docker, VSCode, Linux CLI, Bash, Testing, Debugging  
+### **Developer Tools & DevOps**
+
+Git • GitHub • Docker • Docker Compose • Linux CLI • Bash • Unit Testing • Debugging • CI/CD Basics
+
 <div align="center">
-  <img src="https://img.icons8.com/color/40/000000/git.png"/>
-  <img src="https://img.icons8.com/color/40/000000/docker.png"/>
-  <img src="https://img.icons8.com/color/40/000000/linux--v2.png"/>
+  <img src="https://img.icons8.com/color/40/000000/git.png" alt="Git" />
+  <img src="https://img.icons8.com/color/40/000000/docker.png" alt="Docker" />
+  <img src="https://img.icons8.com/color/40/000000/linux--v2.png" alt="Linux" />
 </div>
 
 ---
 
----
+## 📂 Featured Projects
 
-## 📂 Projects
 ### 🔹 Deep Learning
 
-| Project          | Description                                                                                                                                                                                                 | Link                                              |
-| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
-| **Scene Sorter** | Production-grade deep learning system for scene classification and smart image organization. Built using MobileNetV2 (transfer learning), FastAPI backend, and Next.js frontend. Supports single & batch inference, automatic folder sorting, and ZIP export. Achieved ~86–87% accuracy with optimized inference latency. | [Repo](https://github.com/parnish007/scene-sorter) |
+| Project | Description | Tech Stack | Link |
+|---------|-------------|-----------|------|
+| **Scene Sorter** | Production-grade deep learning system for scene classification and smart image organization. Built using MobileNetV2 (transfer learning), FastAPI backend, and Next.js frontend. Supports single & batch inference, automatic folder sorting, and ZIP export. Achieved ~86–87% accuracy with optimized inference latency. | Tensorflow,keras, FastAPI, Next.js, Docker | [Repository](https://github.com/parnish007/scene-sorter) |
 
+---
 
-### 🔹 classical machine Learning
+### 🔹 Classical Machine Learning
 
-| Project                                             | Description                                                                                                                                                                                                                                         | Link                                                                                  |
-| --------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
-| **Intelligent Product Pitch Recommendation System** | Advanced ML solution recommending the best travel products to pitch to customers. Features single & bulk predictions, probability insights, CSV upload support, and a fully interactive Streamlit UI. Solves real-life sales optimization problems. | [Repo](https://github.com/parnish007/Intelligent-Product-Pitch-Recommendation-System) |
-| Student Placement Prediction                        | Complete ML system predicting student placement based on IQ, CGPA, skills, and internship experience. Includes EDA, model building, evaluation & Streamlit deployment. Helps educational institutions make proactive placement decisions.           | [Repo](https://github.com/parnish007/student_placement_project)                       |
-| Customer Churn Prediction                           | End-to-end ML pipeline to predict customer churn; includes data preprocessing, feature engineering, modeling, evaluation & deployment. Solves real-world business retention problems.                                                               | [Repo](https://github.com/parnish007/customer-churn-prediction)                       |
+| Project | Description | Tech Stack | Link |
+|---------|-------------|-----------|------|
+| **Intelligent Product Pitch Recommendation System** | Advanced ML solution recommending the best travel products to pitch to customers. Features single & bulk predictions, probability insights, CSV upload support, and a fully interactive Streamlit UI. Solves real-life sales optimization problems. | Scikit-learn, Streamlit, Pandas | [Repository](https://github.com/parnish007/Intelligent-Product-Pitch-Recommendation-System) |
+| **Student Placement Prediction** | Complete ML system predicting student placement based on IQ, CGPA, skills, and internship experience. Includes comprehensive EDA, model building, evaluation, and Streamlit deployment. Helps educational institutions make proactive placement decisions. | Python, Scikit-learn, Streamlit | [Repository](https://github.com/parnish007/student_placement_project) |
+| **Customer Churn Prediction** | End-to-end ML pipeline to predict customer churn. Includes data preprocessing, feature engineering, modeling, evaluation, and deployment. Solves real-world business retention problems. | Python, Scikit-learn, Pandas, Flask | [Repository](https://github.com/parnish007/customer-churn-prediction) |
 
-### 🔹 Data Science
+---
 
-| Project    | Description                                                                  | Link                                             |
-| ---------- | ---------------------------------------------------------------------------- | ------------------------------------------------ |
-| DA_project | Data analysis and visualization project demonstrating insights from datasets | [Repo](https://github.com/parnish007/DA_project) |
+### 🔹 Data Science & Analytics
+
+| Project | Description | Link |
+|---------|-------------|------|
+| **Data Analysis Project** | Comprehensive data analysis and visualization project demonstrating insights extraction from complex datasets using statistical techniques and interactive visualizations. | [Repository](https://github.com/parnish007/DA_project) |
+
+---
 
 ### 🔹 Web Development
 
-| Project | Description                                           | Link                                        |
-| ------- | ----------------------------------------------------- | ------------------------------------------- |
-| LFFTT   | Full-stack web application built with React & Node.js | [Repo](https://github.com/parnish007/lfftt) |
+| Project | Description | Tech Stack | Link |
+|---------|-------------|-----------|------|
+| **LFFTT** | Full-stack web application showcasing modern web development practices. Demonstrates responsive design, state management, and backend integration. | React, Node.js, Express.js, MongoDB | [Repository](https://github.com/parnish007/lfftt) |
 
 ---
 
+## 📊 GitHub Statistics
 
----
-
-## 📊 GitHub Stats
 <p align="center">
-  <img src="https://camo.githubusercontent.com/6525924ee1f4e1814faa41ac0223a7dcd0c55dd821fed871ce357380cee745aa/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170693f757365726e616d653d7061726e6973683030372673686f775f69636f6e733d74727565267468656d653d7261646963616c" height="160"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=parnish007&layout=compact&theme=radical" height="160"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=parnish007&show_icons=true&theme=radical&hide_border=true" alt="GitHub Stats" height="160" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=parnish007&layout=compact&theme=radical&hide_border=true" alt="Top Languages" height="160" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=parnish007&theme=radical" height="120"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=parnish007&theme=radical&hide_border=true" alt="GitHub Streak" height="120" />
 </p>
 
 ---
 
-### 🌟 Fun Fact
-- I enjoy **learning any technology required to solve real-world problems end-to-end**  
-- My mission: Build **impactful AI/ML solutions** and contribute to **cutting-edge research & development**
+## 🎯 Current Focus & Goals
 
-  ⭐ *If you like my work, consider starring my repositories!*
+- 🔬 Exploring advanced **Transformer architectures** and **Large Language Models (LLMs)**
+- 🤖 Building end-to-end **production-grade ML systems** with scalable infrastructure
+- 📚 Contributing to **open-source AI/ML projects**
+- 🌍 Working on **real-world problems** that have meaningful impact
+
+---
+
+## 💡 Philosophy
+
+> *"I believe in learning by doing. Every project is an opportunity to deepen understanding and create value. My mission is to build impactful AI/ML solutions and contribute to cutting-edge research and development."*
+
+**Fun Fact**: I enjoy learning *any* technology required to solve real-world problems end-to-end. From data engineering to deployment, I'm passionate about the complete pipeline.
+
+---
+
+## 📞 Let's Collaborate!
+
+I'm always interested in:
+- 🤝 Collaborating on AI/ML projects
+- 💬 Discussing emerging technologies and research
+- 🎓 Sharing knowledge and learning from others
+- 🚀 Building solutions to real-world problems
+
+**Feel free to reach out!** Connect with me on [LinkedIn](https://www.linkedin.com/in/trilochan-sharma-995851370/), [Twitter](https://twitter.com/parnish007), or [Email](mailto:parnishklpo@gmail.com).
+
+---
+
+## ⭐ Support My Work
+
+If you find my projects useful or enjoy my work, please consider:
+- ⭐ **Starring** my repositories
+- 🔗 **Sharing** my projects with others
+- 💬 **Providing feedback** and suggestions
+- 🤝 **Contributing** to open-source projects
+
+---
+
+<p align="center">
+  <em>Made with ❤️ by Parnish | Always learning, always building</em>
+</p>
