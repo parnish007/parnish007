@@ -113,7 +113,11 @@ Matplotlib • Seaborn • Plotly
 
 **Backend**: Node.js • Express.js • Django • Flask • REST APIs • GraphQL
 
-**Databases**: MongoDB • PostgreSQL • MySQL • Redis
+**API & Security**: Swagger • OAuth2 • JWT
+
+**Databases**: MongoDB • PostgreSQL • MySQL • Redis • Aerospike
+
+**ORM / Data Access**: Hibernate • JPA
 
 <div align="center">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="40" alt="React" />
@@ -123,31 +127,75 @@ Matplotlib • Seaborn • Plotly
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" height="40" alt="MongoDB" />
   <img src="https://img.icons8.com/color/40/000000/postgreesql.png" alt="PostgreSQL" />
   <img src="https://img.icons8.com/color/40/000000/mysql-logo.png" alt="MySQL" />
+  <img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white" height="30" alt="Redis" />
+  <img src="https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=black" height="30" alt="Swagger" />
+  <img src="https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white" height="30" alt="JWT" />
+  <img src="https://img.shields.io/badge/OAuth2-EB5424?style=for-the-badge&logo=auth0&logoColor=white" height="30" alt="OAuth2" />
+  <img src="https://img.shields.io/badge/Hibernate-59666C?style=for-the-badge&logo=hibernate&logoColor=white" height="30" alt="Hibernate" />
 </div>
 
 ---
 
-### **IoT & Cloud**
+### **Messaging & Streaming**
 
-**IoT**: Raspberry Pi • Arduino • Sensor Integration • Data Pipelines • Edge Computing
+**Technologies**: Apache Kafka • RabbitMQ
 
-**Cloud Platforms**: AWS • Azure • GCP (Google Cloud Platform)
+<div align="center">
+  <img src="https://img.shields.io/badge/Apache%20Kafka-231F20?style=for-the-badge&logo=apachekafka&logoColor=white" height="30" alt="Kafka" />
+  <img src="https://img.shields.io/badge/RabbitMQ-FF6600?style=for-the-badge&logo=rabbitmq&logoColor=white" height="30" alt="RabbitMQ" />
+</div>
+
+---
+
+### **Cloud & Storage**
+
+**Cloud Platforms**: AWS (S3 • EC2 • Lambda) • Azure • GCP (Google Cloud Platform)
+
+**Object Storage**: AWS S3 • Aerospike
 
 <div align="center">
   <img src="https://img.icons8.com/color/40/000000/amazon-web-services.png" alt="AWS" />
   <img src="https://img.icons8.com/fluency/40/000000/azure-1.png" alt="Azure" />
+  <img src="https://img.shields.io/badge/Amazon%20S3-569A31?style=for-the-badge&logo=amazons3&logoColor=white" height="30" alt="S3" />
 </div>
 
 ---
 
-### **Developer Tools & DevOps**
+### **IoT & Edge**
 
-Git • GitHub • Docker • Docker Compose • Linux CLI • Bash • Unit Testing • Debugging • CI/CD Basics
+**Technologies**: Raspberry Pi • Arduino • Sensor Integration • Data Pipelines • Edge Computing
+
+---
+
+### **DevOps & Infrastructure**
+
+**Containerization & Orchestration**: Docker • Docker Compose • Kubernetes (K8s)
+
+**Version Control**: Git • GitHub
+
+**CI/CD**: CI/CD Basics • Linux CLI • Bash
+
+**Testing**: JUnit • Mockito • Unit Testing • Debugging
 
 <div align="center">
   <img src="https://img.icons8.com/color/40/000000/git.png" alt="Git" />
   <img src="https://img.icons8.com/color/40/000000/docker.png" alt="Docker" />
   <img src="https://img.icons8.com/color/40/000000/linux--v2.png" alt="Linux" />
+  <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" height="30" alt="Kubernetes" />
+  <img src="https://img.shields.io/badge/JUnit-25A162?style=for-the-badge&logo=junit5&logoColor=white" height="30" alt="JUnit" />
+  <img src="https://img.shields.io/badge/Mockito-1F8ACB?style=for-the-badge&logo=java&logoColor=white" height="30" alt="Mockito" />
+</div>
+
+---
+
+### **Observability & Monitoring**
+
+**Tools**: Prometheus • New Relic • ELK Stack (Elasticsearch • Logstash • Kibana)
+
+<div align="center">
+  <img src="https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white" height="30" alt="Prometheus" />
+  <img src="https://img.shields.io/badge/New%20Relic-008C99?style=for-the-badge&logo=newrelic&logoColor=white" height="30" alt="New Relic" />
+  <img src="https://img.shields.io/badge/Elastic-005571?style=for-the-badge&logo=elastic&logoColor=white" height="30" alt="ELK Stack" />
 </div>
 
 ---
