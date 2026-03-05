@@ -93,6 +93,22 @@ Matplotlib • Seaborn • Plotly
 
 ---
 
+### **Agentic AI & RAG Systems**
+
+**Core Skills**: Multi-Agent Architecture • RAG Pipelines • Vector Search • LLM Orchestration • Prompt Engineering • Retrieval-Augmented Generation • Cosine Similarity • Embedding Pipelines • Response Caching
+
+**Libraries & Tools**: LangChain • HuggingFace • OpenAI API • Gemini API • Anthropic Claude API • FAISS • SQLite Vector Store • Streamlit
+
+<div align="center">
+  <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white" height="30" alt="LangChain" />
+  <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white" height="30" alt="OpenAI" />
+  <img src="https://img.shields.io/badge/Anthropic_Claude-D97757?style=for-the-badge&logo=anthropic&logoColor=white" height="30" alt="Claude" />
+  <img src="https://img.shields.io/badge/Google_Gemini-4285F4?style=for-the-badge&logo=google&logoColor=white" height="30" alt="Gemini" />
+  <img src="https://img.shields.io/badge/FAISS-FF6B35?style=for-the-badge&logoColor=white" height="30" alt="FAISS" />
+</div>
+
+---
+
 ### **Data Science & Analytics**
 
 **Skills**: Exploratory Data Analysis (EDA) • Statistical Analysis • Data Cleaning • Advanced Visualization • Feature Selection
@@ -202,11 +218,19 @@ Matplotlib • Seaborn • Plotly
 
 ## 📂 Featured Projects
 
+### 🤖 Agentic AI & RAG Systems
+
+| Project | Description | Tech Stack | Link |
+|---------|-------------|-----------|------|
+| **MeroStudySathy** | Intelligent multi-agent PDF tutor for students, researchers, and professionals. Upload any PDF — lecture, research paper, or article — and get a structured learning plan, interactive teaching sessions with citations, follow-up chat, and evaluated practice questions. Built on a full RAG pipeline: chunking → embeddings → SQLite vector store → cosine similarity retrieval → 4 specialized agents (Planner, Teacher, Practice, Evaluator). Response caching cuts API costs by 60–80% on repeat sessions. Everything runs locally — zero data leaves your machine. | Next.js 14 • TypeScript • SQLite Vector Store • Multi-LLM (OpenAI / Gemini / Claude) • RAG • LangChain • AES-256 | [Repository](https://github.com/parnish007/merostudysathy) |
+
+---
+
 ### 🔹 Deep Learning
 
 | Project | Description | Tech Stack | Link |
 |---------|-------------|-----------|------|
-| **Scene Sorter** | Production-grade deep learning system for scene classification and smart image organization. Built using MobileNetV2 (transfer learning), FastAPI backend, and Next.js frontend. Supports single & batch inference, automatic folder sorting, and ZIP export. Achieved ~86–87% accuracy with optimized inference latency. | Tensorflow,keras, FastAPI, Next.js, Docker | [Repository](https://github.com/parnish007/scene-sorter) |
+| **Scene Sorter** | Production-grade deep learning system for scene classification and smart image organization. Built using MobileNetV2 (transfer learning), FastAPI backend, and Next.js frontend. Supports single & batch inference, automatic folder sorting, and ZIP export. Achieved ~86–87% accuracy with optimized inference latency. | TensorFlow • Keras • FastAPI • Next.js • Docker | [Repository](https://github.com/parnish007/scene-sorter) |
 
 ---
 
@@ -214,9 +238,9 @@ Matplotlib • Seaborn • Plotly
 
 | Project | Description | Tech Stack | Link |
 |---------|-------------|-----------|------|
-| **Intelligent Product Pitch Recommendation System** | Advanced ML solution recommending the best travel products to pitch to customers. Features single & bulk predictions, probability insights, CSV upload support, and a fully interactive Streamlit UI. Solves real-life sales optimization problems. | Scikit-learn, Streamlit, Pandas | [Repository](https://github.com/parnish007/Intelligent-Product-Pitch-Recommendation-System) |
-| **Student Placement Prediction** | Complete ML system predicting student placement based on IQ, CGPA, skills, and internship experience. Includes comprehensive EDA, model building, evaluation, and Streamlit deployment. Helps educational institutions make proactive placement decisions. | Python, Scikit-learn, Streamlit | [Repository](https://github.com/parnish007/student_placement_project) |
-| **Customer Churn Prediction** | End-to-end ML pipeline to predict customer churn. Includes data preprocessing, feature engineering, modeling, evaluation, and deployment. Solves real-world business retention problems. | Python, Scikit-learn, Pandas, Flask | [Repository](https://github.com/parnish007/customer-churn-prediction) |
+| **Intelligent Product Pitch Recommendation System** | Advanced ML solution recommending the best travel products to pitch to customers. Features single & bulk predictions, probability insights, CSV upload support, and a fully interactive Streamlit UI. Solves real-life sales optimization problems. | Scikit-learn • Streamlit • Pandas | [Repository](https://github.com/parnish007/Intelligent-Product-Pitch-Recommendation-System) |
+| **Student Placement Prediction** | Complete ML system predicting student placement based on IQ, CGPA, skills, and internship experience. Includes comprehensive EDA, model building, evaluation, and Streamlit deployment. Helps educational institutions make proactive placement decisions. | Python • Scikit-learn • Streamlit | [Repository](https://github.com/parnish007/student_placement_project) |
+| **Customer Churn Prediction** | End-to-end ML pipeline to predict customer churn. Includes data preprocessing, feature engineering, modeling, evaluation, and deployment. Solves real-world business retention problems. | Python • Scikit-learn • Pandas • Flask | [Repository](https://github.com/parnish007/customer-churn-prediction) |
 
 ---
 
@@ -232,7 +256,7 @@ Matplotlib • Seaborn • Plotly
 
 | Project | Description | Tech Stack | Link |
 |---------|-------------|-----------|------|
-| **LFFTT** | Full-stack web application showcasing modern web development practices. Demonstrates responsive design, state management, and backend integration. | React, Node.js, Express.js, MongoDB | [Repository](https://github.com/parnish007/lfftt) |
+| **LFFTT** | Full-stack web application showcasing modern web development practices. Demonstrates responsive design, state management, and backend integration. | React • Node.js • Express.js • MongoDB | [Repository](https://github.com/parnish007/lfftt) |
 
 ---
 
@@ -253,6 +277,7 @@ Matplotlib • Seaborn • Plotly
 
 - 🔬 Exploring advanced **Transformer architectures** and **Large Language Models (LLMs)**
 - 🤖 Building end-to-end **production-grade ML systems** with scalable infrastructure
+- 🧠 Researching **Agentic AI** patterns — multi-agent orchestration, RAG, and vector retrieval systems
 - 📚 Contributing to **open-source AI/ML projects**
 - 🌍 Working on **real-world problems** that have meaningful impact
 
@@ -262,7 +287,7 @@ Matplotlib • Seaborn • Plotly
 
 > *"I believe in learning by doing. Every project is an opportunity to deepen understanding and create value. My mission is to build impactful AI/ML solutions and contribute to cutting-edge research and development."*
 
-**Fun Fact**: I enjoy learning *any* technology required to solve real-world problems end-to-end. From data engineering to deployment, I'm passionate about the complete pipeline.
+**Fun Fact**: I enjoy learning *any* technology required to solve real-world problems end-to-end. From data engineering to deployment, I care about the complete pipeline.
 
 ---
 
