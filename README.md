@@ -1,4 +1,4 @@
-<h2 align="center">Hi 👋! I'm Parnish AKA (TRILOCHAN) — AI/ML & Problem-Solving Enthusiast from Nepal 🇳🇵</h2>
+<h2 align="center">Hi 👋! I'm Parnish AKA (TRILOCHAN) — AI/ML & Full-Stack Engineer from Nepal 🇳🇵</h2>
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/74038190/212749447-bfb7e725-6987-49d9-ae85-2015e3e7cc41.gif"
@@ -34,6 +34,9 @@
   <a href="https://github.com/parnish007">
     <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
   </a>
+  <a href="https://parnish-aka-trilochan.vercel.app" target="_blank">
+    <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
+  </a>
 </p>
 
 ---
@@ -49,6 +52,7 @@ Linear Algebra • Calculus • Probability & Statistics • Discrete Mathematic
 
 <div align="center">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" alt="Python" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="40" alt="TypeScript" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" height="40" alt="C++" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" height="40" alt="C" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="JavaScript" />
@@ -60,7 +64,7 @@ Linear Algebra • Calculus • Probability & Statistics • Discrete Mathematic
 
 ### **AI & Machine Learning**
 
-**Core Skills**: Supervised & Unsupervised Learning • Feature Engineering • Model Evaluation • Pipeline Design • Hyperparameter Tuning
+**Core Skills**: Supervised & Unsupervised Learning • Feature Engineering • Model Evaluation • Pipeline Design • Hyperparameter Tuning • Transfer Learning • Model Fine-tuning • DPO (Direct Preference Optimization)
 
 **Libraries & Frameworks**:
 
@@ -79,11 +83,11 @@ Matplotlib • Seaborn • Plotly
 
 ### **Deep Learning & NLP**
 
-**Deep Learning**: CNNs • RNNs • Transformers • GANs • LLM Applications • Transfer Learning
+**Deep Learning**: CNNs • RNNs • Transformers • GANs • LLM Applications • Transfer Learning • MobileNetV2 • Fine-tuning
 
-**NLP**: Tokenization • Embeddings • Text Classification • Sentiment Analysis • Named Entity Recognition
+**NLP**: Tokenization • Embeddings • Text Classification • Sentiment Analysis • Named Entity Recognition • Prompt Engineering
 
-**Libraries**: PyTorch • TensorFlow • Keras • NLTK • spaCy • HuggingFace
+**Libraries**: PyTorch • TensorFlow • Keras • NLTK • spaCy • HuggingFace TRL
 
 <div align="center">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" height="40" alt="PyTorch" />
@@ -95,16 +99,18 @@ Matplotlib • Seaborn • Plotly
 
 ### **Agentic AI & RAG Systems**
 
-**Core Skills**: Multi-Agent Architecture • RAG Pipelines • Vector Search • LLM Orchestration • Prompt Engineering • Retrieval-Augmented Generation • Cosine Similarity • Embedding Pipelines • Response Caching
+**Core Skills**: Multi-Agent Architecture • RAG Pipelines • Vector Search • LLM Orchestration • Prompt Engineering • Retrieval-Augmented Generation • Cosine Similarity • Embedding Pipelines • Response Caching • MCP (Model Context Protocol) • Tool Design • Policy Engines • Semantic Search • Circuit Breakers • Audit Logging • OpenAPI Auto-discovery • Reinforcement Learning from Human Feedback (RLHF)
 
-**Libraries & Tools**: LangChain • HuggingFace • OpenAI API • Gemini API • Anthropic Claude API • FAISS • SQLite Vector Store • Streamlit
+**Libraries & Tools**: LangChain • LangGraph • HuggingFace • OpenAI API • Gemini API • Anthropic Claude API • FAISS • SQLite Vector Store • FastMCP • Streamlit
 
 <div align="center">
   <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white" height="30" alt="LangChain" />
+  <img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white" height="30" alt="LangGraph" />
   <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white" height="30" alt="OpenAI" />
   <img src="https://img.shields.io/badge/Anthropic_Claude-D97757?style=for-the-badge&logo=anthropic&logoColor=white" height="30" alt="Claude" />
   <img src="https://img.shields.io/badge/Google_Gemini-4285F4?style=for-the-badge&logo=google&logoColor=white" height="30" alt="Gemini" />
   <img src="https://img.shields.io/badge/FAISS-FF6B35?style=for-the-badge&logoColor=white" height="30" alt="FAISS" />
+  <img src="https://img.shields.io/badge/MCP-000000?style=for-the-badge&logoColor=white" height="30" alt="MCP" />
 </div>
 
 ---
@@ -125,29 +131,41 @@ Matplotlib • Seaborn • Plotly
 
 ### **Web Development**
 
-**Frontend**: HTML • CSS • JavaScript • React • Next.js
+**Frontend**: HTML • CSS • JavaScript • TypeScript • React • Next.js 14 (App Router) • shadcn/ui • Tailwind CSS
 
-**Backend**: Node.js • Express.js • Django • Flask • REST APIs • GraphQL
+**Backend**: Node.js • Express.js • FastAPI • Django • Flask • REST APIs • GraphQL • Server-Sent Events (SSE)
 
-**API & Security**: Swagger • OAuth2 • JWT
+**API & Security**: Swagger • OAuth2 • JWT • AES-256 Encryption • Supabase Auth • RLS (Row Level Security)
 
-**Databases**: MongoDB • PostgreSQL • MySQL • Redis • Aerospike
+**Databases**: MongoDB • PostgreSQL • pgvector • MySQL • Redis • SQLite • Aerospike • Supabase
 
-**ORM / Data Access**: Hibernate • JPA
+**ORM / Data Access**: Hibernate • JPA • Prisma • Drizzle
 
 <div align="center">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="40" alt="React" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" height="40" alt="Next.js" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="40" alt="Node.js" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" height="40" alt="Express.js" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" height="40" alt="FastAPI" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" height="40" alt="MongoDB" />
   <img src="https://img.icons8.com/color/40/000000/postgreesql.png" alt="PostgreSQL" />
   <img src="https://img.icons8.com/color/40/000000/mysql-logo.png" alt="MySQL" />
   <img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white" height="30" alt="Redis" />
+  <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" height="30" alt="Supabase" />
   <img src="https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=black" height="30" alt="Swagger" />
   <img src="https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white" height="30" alt="JWT" />
   <img src="https://img.shields.io/badge/OAuth2-EB5424?style=for-the-badge&logo=auth0&logoColor=white" height="30" alt="OAuth2" />
-  <img src="https://img.shields.io/badge/Hibernate-59666C?style=for-the-badge&logo=hibernate&logoColor=white" height="30" alt="Hibernate" />
+</div>
+
+---
+
+### **Task Queues & Background Processing**
+
+**Technologies**: Celery • Redis • Bull • Background Jobs • Async Task Pipelines
+
+<div align="center">
+  <img src="https://img.shields.io/badge/Celery-37814A?style=for-the-badge&logo=celery&logoColor=white" height="30" alt="Celery" />
+  <img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white" height="30" alt="Redis" />
 </div>
 
 ---
@@ -165,21 +183,22 @@ Matplotlib • Seaborn • Plotly
 
 ### **Cloud & Storage**
 
-**Cloud Platforms**: AWS (S3 • EC2 • Lambda) • Azure • GCP (Google Cloud Platform)
+**Cloud Platforms**: AWS (S3 • EC2 • Lambda) • Azure • GCP • Vercel
 
-**Object Storage**: AWS S3 • Aerospike
+**Object Storage**: AWS S3 • Aerospike • Supabase Storage
 
 <div align="center">
   <img src="https://img.icons8.com/color/40/000000/amazon-web-services.png" alt="AWS" />
   <img src="https://img.icons8.com/fluency/40/000000/azure-1.png" alt="Azure" />
   <img src="https://img.shields.io/badge/Amazon%20S3-569A31?style=for-the-badge&logo=amazons3&logoColor=white" height="30" alt="S3" />
+  <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" height="30" alt="Vercel" />
 </div>
 
 ---
 
 ### **IoT & Edge**
 
-**Technologies**: Raspberry Pi • Arduino • Sensor Integration • Data Pipelines • Edge Computing
+**Technologies**: Raspberry Pi • Arduino • Sensor Integration • Data Pipelines • Edge Computing • NVIDIA Edge AI • ESP32 • Wireless Protocol Design
 
 ---
 
@@ -189,17 +208,17 @@ Matplotlib • Seaborn • Plotly
 
 **Version Control**: Git • GitHub
 
-**CI/CD**: CI/CD Basics • Linux CLI • Bash
+**CI/CD**: GitHub Actions • CI/CD Pipelines • Linux CLI • Bash
 
-**Testing**: JUnit • Mockito • Unit Testing • Debugging
+**Testing**: JUnit • Mockito • Unit Testing • Debugging • Zod Validation
 
 <div align="center">
   <img src="https://img.icons8.com/color/40/000000/git.png" alt="Git" />
   <img src="https://img.icons8.com/color/40/000000/docker.png" alt="Docker" />
   <img src="https://img.icons8.com/color/40/000000/linux--v2.png" alt="Linux" />
   <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" height="30" alt="Kubernetes" />
+  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" height="30" alt="GitHub Actions" />
   <img src="https://img.shields.io/badge/JUnit-25A162?style=for-the-badge&logo=junit5&logoColor=white" height="30" alt="JUnit" />
-  <img src="https://img.shields.io/badge/Mockito-1F8ACB?style=for-the-badge&logo=java&logoColor=white" height="30" alt="Mockito" />
 </div>
 
 ---
@@ -218,10 +237,12 @@ Matplotlib • Seaborn • Plotly
 
 ## 📂 Featured Projects
 
-### 🤖 Agentic AI & RAG Systems
+### 🤖 Agentic AI & Automation
 
 | Project | Description | Tech Stack | Link |
 |---------|-------------|-----------|------|
+| **Job Agent** | Fully autonomous end-to-end job application pipeline. Scrapes listings from LinkedIn, Indeed and Glassdoor, scores them against your profile using semantic search, generates a uniquely tailored ATS-optimized resume per role using a DPO fine-tuned model, and autonomously submits applications via browser automation. Includes a reinforcement learning feedback loop that retrains the model nightly based on real application outcomes (rejection, view, interview). | LangGraph • FastAPI • Next.js 14 • PostgreSQL • pgvector • Celery • Redis • Playwright • HuggingFace TRL • FastMCP | [Repository](https://github.com/parnish007/jobagent) |
+| **cms-mcp** | Published MCP server (npm: cms-mcp) giving Claude full programmatic control over any REST-based CMS — Supabase, Strapi, Payload, and more. Features 32 MCP tools, a human approval gate (browser UI + SSE, approve/reject before any write), a policy engine with 10 rule types, semantic search (OpenAI embeddings + TF-IDF fallback), auto-schema inspector, circuit breaker, audit logging, GitHub webhook mode, and OpenAPI auto-discovery. 78 tests. | TypeScript 5.8 • Node.js • Zod • SQLite • Docker • MCP SDK | [npm](https://www.npmjs.com/package/cms-mcp) · [Repository](https://github.com/parnish007/cms-mcp) |
 | **MeroStudySathy** | Intelligent multi-agent PDF tutor for students, researchers, and professionals. Upload any PDF — lecture, research paper, or article — and get a structured learning plan, interactive teaching sessions with citations, follow-up chat, and evaluated practice questions. Built on a full RAG pipeline: chunking → embeddings → SQLite vector store → cosine similarity retrieval → 4 specialized agents (Planner, Teacher, Practice, Evaluator). Response caching cuts API costs by 60–80% on repeat sessions. Everything runs locally — zero data leaves your machine. | Next.js 14 • TypeScript • SQLite Vector Store • Multi-LLM (OpenAI / Gemini / Claude) • RAG • LangChain • AES-256 | [Repository](https://github.com/parnish007/merostudysathy) |
 
 ---
@@ -239,8 +260,8 @@ Matplotlib • Seaborn • Plotly
 | Project | Description | Tech Stack | Link |
 |---------|-------------|-----------|------|
 | **Intelligent Product Pitch Recommendation System** | Advanced ML solution recommending the best travel products to pitch to customers. Features single & bulk predictions, probability insights, CSV upload support, and a fully interactive Streamlit UI. Solves real-life sales optimization problems. | Scikit-learn • Streamlit • Pandas | [Repository](https://github.com/parnish007/Intelligent-Product-Pitch-Recommendation-System) |
-| **Student Placement Prediction** | Complete ML system predicting student placement based on IQ, CGPA, skills, and internship experience. Includes comprehensive EDA, model building, evaluation, and Streamlit deployment. Helps educational institutions make proactive placement decisions. | Python • Scikit-learn • Streamlit | [Repository](https://github.com/parnish007/student_placement_project) |
-| **Customer Churn Prediction** | End-to-end ML pipeline to predict customer churn. Includes data preprocessing, feature engineering, modeling, evaluation, and deployment. Solves real-world business retention problems. | Python • Scikit-learn • Pandas • Flask | [Repository](https://github.com/parnish007/customer-churn-prediction) |
+| **Student Placement Prediction** | Complete ML system predicting student placement based on IQ, CGPA, skills, and internship experience. Includes comprehensive EDA, model building, evaluation, and Streamlit deployment. | Python • Scikit-learn • Streamlit | [Repository](https://github.com/parnish007/student_placement_project) |
+| **Customer Churn Prediction** | End-to-end ML pipeline to predict customer churn. Includes data preprocessing, feature engineering, modeling, evaluation, and deployment. | Python • Scikit-learn • Pandas • Flask | [Repository](https://github.com/parnish007/customer-churn-prediction) |
 
 ---
 
@@ -256,7 +277,8 @@ Matplotlib • Seaborn • Plotly
 
 | Project | Description | Tech Stack | Link |
 |---------|-------------|-----------|------|
-| **LFFTT** | Full-stack web application showcasing modern web development practices. Demonstrates responsive design, state management, and backend integration. | React • Node.js • Express.js • MongoDB | [Repository](https://github.com/parnish007/lfftt) |
+| **AI Portfolio Platform** | Dynamic portfolio website with a RAG-based AI chatbot, admin CMS, analytics with CSV export, and Supabase backend. Deployed on Vercel. | Next.js 14 • Supabase • TypeScript • Gemini API • Vercel | [Live](https://parnish-aka-trilochan.vercel.app) |
+| **LFFTT** | Full-stack web application showcasing modern web development practices with responsive design, state management, and backend integration. | React • Node.js • Express.js • MongoDB | [Repository](https://github.com/parnish007/lfftt) |
 
 ---
 
@@ -276,8 +298,9 @@ Matplotlib • Seaborn • Plotly
 ## 🎯 Current Focus & Goals
 
 - 🔬 Exploring advanced **Transformer architectures** and **Large Language Models (LLMs)**
-- 🤖 Building end-to-end **production-grade ML systems** with scalable infrastructure
-- 🧠 Researching **Agentic AI** patterns — multi-agent orchestration, RAG, and vector retrieval systems
+- 🤖 Building end-to-end **production-grade agentic AI systems** with real-world automation
+- 🧠 Researching **MCP (Model Context Protocol)** — tool design, policy engines, cross-LLM memory
+- 🔁 Implementing **RL feedback loops** for self-improving AI pipelines
 - 📚 Contributing to **open-source AI/ML projects**
 - 🌍 Working on **real-world problems** that have meaningful impact
 
@@ -294,8 +317,8 @@ Matplotlib • Seaborn • Plotly
 ## 📞 Let's Collaborate!
 
 I'm always interested in:
-- 🤝 Collaborating on AI/ML projects
-- 💬 Discussing emerging technologies and research
+- 🤝 Collaborating on AI/ML and agentic AI projects
+- 💬 Discussing emerging technologies, MCP, and LLM tooling
 - 🎓 Sharing knowledge and learning from others
 - 🚀 Building solutions to real-world problems
 
