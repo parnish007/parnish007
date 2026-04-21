@@ -47,6 +47,50 @@
 Linear Algebra • Calculus • Probability & Statistics • Discrete Mathematics • Graph Theory • Optimization • Mathematical Modeling
 
 ---
+---
+
+# 🧠 TECH ECOSYSTEM TREE
+
+```mermaid
+mindmap
+  root((TRILOCHAN ENGINE))
+    AI/ML
+      Supervised Learning
+      Unsupervised Learning
+      Deep Learning
+      Transformers
+      RAG Systems
+      RLHF
+    Backend
+      FastAPI
+      Node.js
+      Django
+      Flask
+      GraphQL
+    Frontend
+      React
+      Next.js
+      Tailwind
+      TypeScript
+    Data
+      PostgreSQL
+      MongoDB
+      Redis
+      Vector DB
+      SQLite
+    DevOps
+      Docker
+      Kubernetes
+      CI/CD
+      Monitoring
+    Cloud
+      AWS
+      Azure
+      GCP
+      Vercel
+```
+
+---
 
 ### **Programming Languages**
 
