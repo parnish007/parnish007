@@ -1,0 +1,23 @@
+name: Generate Activity Graph
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"  # every 12 hours
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Generate activity graph
+        uses: Ashutosh00710/github-readme-activity-graph@v1.1.1
+        with:
+          username: parnish007
+          theme: tokyo-night
+          hide_border: true
+          custom_title: "Parnish's Contribution Graph"
