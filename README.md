@@ -1,55 +1,58 @@
-<h2 align="center">Hi 👋! I'm Parnish AKA (TRILOCHAN) — AI/ML & Full-Stack Engineer from Nepal 🇳🇵</h2>
+<div align="center">
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/212749447-bfb7e725-6987-49d9-ae85-2015e3e7cc41.gif"
-       alt="Coding Animation"
-       width="500"
-       style="border-radius:15px; box-shadow:0 0 20px #00ffea, 0 0 40px #ff00d4, 0 0 60px #00ffea; display:block; margin-left:auto; margin-right:auto; margin-top:20px; margin-bottom:30px;" />
-</p>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Parnish+Trilochan&fontSize=50&fontColor=fff&animation=twinkling&fontAlignY=36&desc=AI/ML+%26+Full-Stack+Engineer+from+Nepal&descAlignY=58&descSize=18" width="100%" />
 
----
+</div>
 
-## 🔭 About Me
+<div align="center">
 
-- 🚀 **Problem Solver**: Build end-to-end solutions across AI, ML, DL, NLP, Data Science, Web, App, and IoT
-- 💡 **Documentation & Practice**: Consistently document my journey through projects, experiments, and continuous learning
-- 🌱 **Lifelong Learner**: Constantly upskilling in AI/ML, mathematics, and modern software engineering
-- 🥅 **Mission**: Contribute to cutting-edge AI/ML research and develop real-world solutions that make an impact
-- ⚡ **Passion**: Solving complex problems, experimenting with emerging technologies, and mastering new frameworks
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=7C6FFF&center=true&vCenter=true&width=650&lines=Building+production-grade+Agentic+AI+systems+%F0%9F%A4%96;RAG+Pipelines+%7C+LLM+Fine-tuning+%7C+MCP;Full-Stack+%7C+DevOps+%7C+IoT+%7C+Edge+AI;Always+learning%2C+always+building+%E2%9A%A1)](https://git.io/typing-svg)
 
----
+</div>
 
-## 🔗 Connect with Me
+<br/>
 
-<p align="center">
-  <a href="https://www.linkedin.com/in/trilochan-sharma-995851370/" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  <a href="https://twitter.com/parnish007" target="_blank">
-    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter" />
-  </a>
-  <a href="mailto:parnishklpo@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
-  </a>
-  <a href="https://github.com/parnish007">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-  </a>
-  <a href="https://parnish-aka-trilochan.vercel.app" target="_blank">
-    <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
-  </a>
-</p>
+<div align="center">
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/trilochan-sharma-995851370/)
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/parnish007)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:parnishklpo@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/parnish007)
+[![Portfolio](https://img.shields.io/badge/Portfolio-7C6FFF?style=for-the-badge&logo=vercel&logoColor=white)](https://parnish-aka-trilochan.vercel.app)
+
+</div>
 
 ---
 
-## 🛠️ Skills & Tech Stack
+## 🧬 About Me
 
-### **Mathematics & Foundations**
-Linear Algebra • Calculus • Probability & Statistics • Discrete Mathematics • Graph Theory • Optimization • Mathematical Modeling
+```python
+class Trilochan:
+    name        = "Parnish (Trilochan Sharma)"
+    location    = "Nepal 🇳🇵"
+    role        = "AI/ML & Full-Stack Engineer"
+    focus       = ["Agentic AI", "RAG Systems", "LLM Fine-tuning", "MCP"]
+    mission     = "Build impactful AI/ML solutions & contribute to cutting-edge research"
+    fun_fact    = "I learn any tech needed to own the full pipeline — soup to nuts 🍜"
+
+    def greet(self):
+        return "Let's build something that actually matters 🚀"
+```
+
+<br/>
+
+<table align="center">
+<tr>
+<td align="center">🚀 <b>Problem Solver</b><br/><sub>End-to-end across AI, ML, DL,<br/>NLP, Web, App & IoT</sub></td>
+<td align="center">💡 <b>Documentation First</b><br/><sub>Every project, experiment &<br/>learning journey recorded</sub></td>
+<td align="center">🌱 <b>Lifelong Learner</b><br/><sub>Always upskilling in AI/ML,<br/>math & modern engineering</sub></td>
+<td align="center">⚡ <b>Passion</b><br/><sub>Emerging tech, complex problems,<br/>mastering new frameworks</sub></td>
+</tr>
+</table>
 
 ---
----
 
-# 🧠 TECH ECOSYSTEM TREE
+## 🧠 Tech Ecosystem
 
 ```mermaid
 mindmap
@@ -92,294 +95,407 @@ mindmap
 
 ---
 
-### **Programming Languages**
+## 🛠️ Skills & Tech Stack
+
+### 📐 Mathematics & Foundations
+> Linear Algebra • Calculus • Probability & Statistics • Discrete Mathematics • Graph Theory • Optimization • Mathematical Modeling
+
+---
+
+### 💻 Programming Languages
 
 <div align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" alt="Python" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="40" alt="TypeScript" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" height="40" alt="C++" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" height="40" alt="C" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="JavaScript" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="HTML5" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="CSS3" />
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
+![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+
 </div>
 
 ---
 
-### **AI & Machine Learning**
+### 🤖 AI & Machine Learning
 
-**Core Skills**: Supervised & Unsupervised Learning • Feature Engineering • Model Evaluation • Pipeline Design • Hyperparameter Tuning • Transfer Learning • Model Fine-tuning • DPO (Direct Preference Optimization)
-
-**Libraries & Frameworks**:
+**Core Skills:** Supervised & Unsupervised Learning • Feature Engineering • Model Evaluation • Pipeline Design • Hyperparameter Tuning • Transfer Learning • Model Fine-tuning • DPO (Direct Preference Optimization)
 
 <div align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" height="40" alt="Scikit-learn" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" height="40" alt="PyTorch" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" height="40" alt="TensorFlow" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/keras/keras-original.svg" height="40" alt="Keras" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" height="40" alt="NumPy" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" height="40" alt="Pandas" />
-</div>
 
-Matplotlib • Seaborn • Plotly
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![Keras](https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=python&logoColor=white)
+![Seaborn](https://img.shields.io/badge/Seaborn-4C72B0?style=for-the-badge&logo=python&logoColor=white)
+![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)
 
----
-
-### **Deep Learning & NLP**
-
-**Deep Learning**: CNNs • RNNs • Transformers • GANs • LLM Applications • Transfer Learning • MobileNetV2 • Fine-tuning
-
-**NLP**: Tokenization • Embeddings • Text Classification • Sentiment Analysis • Named Entity Recognition • Prompt Engineering
-
-**Libraries**: PyTorch • TensorFlow • Keras • NLTK • spaCy • HuggingFace TRL
-
-<div align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" height="40" alt="PyTorch" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" height="40" alt="TensorFlow" />
-  <img src="https://img.shields.io/badge/HuggingFace-FFD700?style=for-the-badge&logo=huggingface&logoColor=black" height="40" alt="HuggingFace" />
 </div>
 
 ---
 
-### **Agentic AI & RAG Systems**
+### 🧬 Deep Learning & NLP
 
-**Core Skills**: Multi-Agent Architecture • RAG Pipelines • Vector Search • LLM Orchestration • Prompt Engineering • Retrieval-Augmented Generation • Cosine Similarity • Embedding Pipelines • Response Caching • MCP (Model Context Protocol) • Tool Design • Policy Engines • Semantic Search • Circuit Breakers • Audit Logging • OpenAPI Auto-discovery • Reinforcement Learning from Human Feedback (RLHF)
+**Deep Learning:** CNNs • RNNs • Transformers • GANs • LLM Applications • Transfer Learning • MobileNetV2 • Fine-tuning
 
-**Libraries & Tools**: LangChain • LangGraph • HuggingFace • OpenAI API • Gemini API • Anthropic Claude API • FAISS • SQLite Vector Store • FastMCP • Streamlit
+**NLP:** Tokenization • Embeddings • Text Classification • Sentiment Analysis • Named Entity Recognition • Prompt Engineering
 
 <div align="center">
-  <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white" height="30" alt="LangChain" />
-  <img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white" height="30" alt="LangGraph" />
-  <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white" height="30" alt="OpenAI" />
-  <img src="https://img.shields.io/badge/Anthropic_Claude-D97757?style=for-the-badge&logo=anthropic&logoColor=white" height="30" alt="Claude" />
-  <img src="https://img.shields.io/badge/Google_Gemini-4285F4?style=for-the-badge&logo=google&logoColor=white" height="30" alt="Gemini" />
-  <img src="https://img.shields.io/badge/FAISS-FF6B35?style=for-the-badge&logoColor=white" height="30" alt="FAISS" />
-  <img src="https://img.shields.io/badge/MCP-000000?style=for-the-badge&logoColor=white" height="30" alt="MCP" />
+
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD700?style=for-the-badge&logo=huggingface&logoColor=black)
+![NLTK](https://img.shields.io/badge/NLTK-3DDC84?style=for-the-badge&logo=python&logoColor=white)
+![spaCy](https://img.shields.io/badge/spaCy-09A3D5?style=for-the-badge&logo=spacy&logoColor=white)
+
 </div>
 
 ---
 
-### **Data Science & Analytics**
+### 🕸️ Agentic AI & RAG Systems
 
-**Skills**: Exploratory Data Analysis (EDA) • Statistical Analysis • Data Cleaning • Advanced Visualization • Feature Selection
-
-**Tools**: Jupyter Notebook • Streamlit • Matplotlib • Seaborn • Plotly
+**Core Skills:** Multi-Agent Architecture • RAG Pipelines • Vector Search • LLM Orchestration • Prompt Engineering • Cosine Similarity • Embedding Pipelines • Response Caching • MCP (Model Context Protocol) • Tool Design • Policy Engines • Semantic Search • Circuit Breakers • Audit Logging • OpenAPI Auto-discovery • RLHF
 
 <div align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg" height="40" alt="Matplotlib" />
-  <img src="https://img.shields.io/badge/jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" height="40" alt="Jupyter" />
-  <img src="https://img.shields.io/badge/streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" height="40" alt="Streamlit" />
+
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
+![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
+![Claude](https://img.shields.io/badge/Anthropic_Claude-D97757?style=for-the-badge&logo=anthropic&logoColor=white)
+![Gemini](https://img.shields.io/badge/Google_Gemini-4285F4?style=for-the-badge&logo=google&logoColor=white)
+![FAISS](https://img.shields.io/badge/FAISS-FF6B35?style=for-the-badge&logoColor=white)
+![FastMCP](https://img.shields.io/badge/FastMCP-000000?style=for-the-badge&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+
 </div>
 
 ---
 
-### **Web Development**
+### 📊 Data Science & Analytics
 
-**Frontend**: HTML • CSS • JavaScript • TypeScript • React • Next.js 14 (App Router) • shadcn/ui • Tailwind CSS
-
-**Backend**: Node.js • Express.js • FastAPI • Django • Flask • REST APIs • GraphQL • Server-Sent Events (SSE)
-
-**API & Security**: Swagger • OAuth2 • JWT • AES-256 Encryption • Supabase Auth • RLS (Row Level Security)
-
-**Databases**: MongoDB • PostgreSQL • pgvector • MySQL • Redis • SQLite • Aerospike • Supabase
-
-**ORM / Data Access**: Hibernate • JPA • Prisma • Drizzle
+**Skills:** Exploratory Data Analysis (EDA) • Statistical Analysis • Data Cleaning • Advanced Visualization • Feature Selection
 
 <div align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="40" alt="React" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" height="40" alt="Next.js" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="40" alt="Node.js" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" height="40" alt="Express.js" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" height="40" alt="FastAPI" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" height="40" alt="MongoDB" />
-  <img src="https://img.icons8.com/color/40/000000/postgreesql.png" alt="PostgreSQL" />
-  <img src="https://img.icons8.com/color/40/000000/mysql-logo.png" alt="MySQL" />
-  <img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white" height="30" alt="Redis" />
-  <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" height="30" alt="Supabase" />
-  <img src="https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=black" height="30" alt="Swagger" />
-  <img src="https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white" height="30" alt="JWT" />
-  <img src="https://img.shields.io/badge/OAuth2-EB5424?style=for-the-badge&logo=auth0&logoColor=white" height="30" alt="OAuth2" />
+
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)
+![Seaborn](https://img.shields.io/badge/Seaborn-4C72B0?style=for-the-badge&logo=python&logoColor=white)
+
 </div>
 
 ---
 
-### **Task Queues & Background Processing**
+### 🌐 Web Development
 
-**Technologies**: Celery • Redis • Bull • Background Jobs • Async Task Pipelines
+**Frontend:** HTML • CSS • JavaScript • TypeScript • React • Next.js 14 (App Router) • shadcn/ui • Tailwind CSS
+
+**Backend:** Node.js • Express.js • FastAPI • Django • Flask • REST APIs • GraphQL • SSE
+
+**Security & Auth:** Swagger • OAuth2 • JWT • AES-256 Encryption • Supabase Auth • RLS
+
+**Databases:** MongoDB • PostgreSQL • pgvector • MySQL • Redis • SQLite • Aerospike • Supabase
+
+**ORM / Data Access:** Hibernate • JPA • Prisma • Drizzle
 
 <div align="center">
-  <img src="https://img.shields.io/badge/Celery-37814A?style=for-the-badge&logo=celery&logoColor=white" height="30" alt="Celery" />
-  <img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white" height="30" alt="Redis" />
+
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![Tailwind](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
+![GraphQL](https://img.shields.io/badge/GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white)
+
+</div>
+
+<div align="center">
+
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white)
+![OAuth2](https://img.shields.io/badge/OAuth2-EB5424?style=for-the-badge&logo=auth0&logoColor=white)
+![Swagger](https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=black)
+
 </div>
 
 ---
 
-### **Messaging & Streaming**
-
-**Technologies**: Apache Kafka • RabbitMQ
+### ⚙️ Task Queues • Messaging • Streaming
 
 <div align="center">
-  <img src="https://img.shields.io/badge/Apache%20Kafka-231F20?style=for-the-badge&logo=apachekafka&logoColor=white" height="30" alt="Kafka" />
-  <img src="https://img.shields.io/badge/RabbitMQ-FF6600?style=for-the-badge&logo=rabbitmq&logoColor=white" height="30" alt="RabbitMQ" />
+
+![Celery](https://img.shields.io/badge/Celery-37814A?style=for-the-badge&logo=celery&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
+![Kafka](https://img.shields.io/badge/Apache_Kafka-231F20?style=for-the-badge&logo=apachekafka&logoColor=white)
+![RabbitMQ](https://img.shields.io/badge/RabbitMQ-FF6600?style=for-the-badge&logo=rabbitmq&logoColor=white)
+
 </div>
 
 ---
 
-### **Cloud & Storage**
+### ☁️ Cloud & Storage
 
-**Cloud Platforms**: AWS (S3 • EC2 • Lambda) • Azure • GCP • Vercel
-
-**Object Storage**: AWS S3 • Aerospike • Supabase Storage
+**Platforms:** AWS (S3 • EC2 • Lambda) • Azure • GCP • Vercel &nbsp;|&nbsp; **Object Storage:** AWS S3 • Aerospike • Supabase Storage
 
 <div align="center">
-  <img src="https://img.icons8.com/color/40/000000/amazon-web-services.png" alt="AWS" />
-  <img src="https://img.icons8.com/fluency/40/000000/azure-1.png" alt="Azure" />
-  <img src="https://img.shields.io/badge/Amazon%20S3-569A31?style=for-the-badge&logo=amazons3&logoColor=white" height="30" alt="S3" />
-  <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" height="30" alt="Vercel" />
+
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
+![Azure](https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white)
+![GCP](https://img.shields.io/badge/GCP-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+![Amazon S3](https://img.shields.io/badge/Amazon_S3-569A31?style=for-the-badge&logo=amazons3&logoColor=white)
+
 </div>
 
 ---
 
-### **IoT & Edge**
+### 🔌 IoT & Edge
 
-**Technologies**: Raspberry Pi • Arduino • Sensor Integration • Data Pipelines • Edge Computing • NVIDIA Edge AI • ESP32 • Wireless Protocol Design
+> Raspberry Pi • Arduino • ESP32 • Sensor Integration • Data Pipelines • Edge Computing • NVIDIA Edge AI • Wireless Protocol Design
 
 ---
 
-### **DevOps & Infrastructure**
+### 🛡️ DevOps & Infrastructure
 
-**Containerization & Orchestration**: Docker • Docker Compose • Kubernetes (K8s)
-
-**Version Control**: Git • GitHub
-
-**CI/CD**: GitHub Actions • CI/CD Pipelines • Linux CLI • Bash
-
-**Testing**: JUnit • Mockito • Unit Testing • Debugging • Zod Validation
+**Containerization:** Docker • Docker Compose • Kubernetes &nbsp;|&nbsp; **CI/CD:** GitHub Actions • Linux CLI • Bash &nbsp;|&nbsp; **Testing:** JUnit • Mockito • Zod Validation
 
 <div align="center">
-  <img src="https://img.icons8.com/color/40/000000/git.png" alt="Git" />
-  <img src="https://img.icons8.com/color/40/000000/docker.png" alt="Docker" />
-  <img src="https://img.icons8.com/color/40/000000/linux--v2.png" alt="Linux" />
-  <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" height="30" alt="Kubernetes" />
-  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" height="30" alt="GitHub Actions" />
-  <img src="https://img.shields.io/badge/JUnit-25A162?style=for-the-badge&logo=junit5&logoColor=white" height="30" alt="JUnit" />
+
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)
+![JUnit](https://img.shields.io/badge/JUnit5-25A162?style=for-the-badge&logo=junit5&logoColor=white)
+
 </div>
 
 ---
 
-### **Observability & Monitoring**
-
-**Tools**: Prometheus • New Relic • ELK Stack (Elasticsearch • Logstash • Kibana)
+### 📡 Observability & Monitoring
 
 <div align="center">
-  <img src="https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white" height="30" alt="Prometheus" />
-  <img src="https://img.shields.io/badge/New%20Relic-008C99?style=for-the-badge&logo=newrelic&logoColor=white" height="30" alt="New Relic" />
-  <img src="https://img.shields.io/badge/Elastic-005571?style=for-the-badge&logo=elastic&logoColor=white" height="30" alt="ELK Stack" />
+
+![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
+![New Relic](https://img.shields.io/badge/New_Relic-008C99?style=for-the-badge&logo=newrelic&logoColor=white)
+![Elasticsearch](https://img.shields.io/badge/Elasticsearch-005571?style=for-the-badge&logo=elasticsearch&logoColor=white)
+![Kibana](https://img.shields.io/badge/Kibana-005571?style=for-the-badge&logo=kibana&logoColor=white)
+![Logstash](https://img.shields.io/badge/Logstash-005571?style=for-the-badge&logo=logstash&logoColor=white)
+
 </div>
 
 ---
 
-## 📂 Featured Projects
+## 🚀 Featured Projects
 
 ### 🤖 Agentic AI & Automation
 
-| Project | Description | Tech Stack | Link |
-|---------|-------------|-----------|------|
-| **Job Agent** | Fully autonomous end-to-end job application pipeline. Scrapes listings from LinkedIn, Indeed and Glassdoor, scores them against your profile using semantic search, generates a uniquely tailored ATS-optimized resume per role using a DPO fine-tuned model, and autonomously submits applications via browser automation. Includes a reinforcement learning feedback loop that retrains the model nightly based on real application outcomes (rejection, view, interview). | LangGraph • FastAPI • Next.js 14 • PostgreSQL • pgvector • Celery • Redis • Playwright • HuggingFace TRL • FastMCP | [Repository](https://github.com/parnish007/jobagent) |
-| **cms-mcp** | Published MCP server (npm: cms-mcp) giving Claude full programmatic control over any REST-based CMS — Supabase, Strapi, Payload, and more. Features 32 MCP tools, a human approval gate (browser UI + SSE, approve/reject before any write), a policy engine with 10 rule types, semantic search (OpenAI embeddings + TF-IDF fallback), auto-schema inspector, circuit breaker, audit logging, GitHub webhook mode, and OpenAPI auto-discovery. 78 tests. | TypeScript 5.8 • Node.js • Zod • SQLite • Docker • MCP SDK | [npm](https://www.npmjs.com/package/cms-mcp) · [Repository](https://github.com/parnish007/cms-mcp) |
-| **MeroStudySathy** | Intelligent multi-agent PDF tutor for students, researchers, and professionals. Upload any PDF — lecture, research paper, or article — and get a structured learning plan, interactive teaching sessions with citations, follow-up chat, and evaluated practice questions. Built on a full RAG pipeline: chunking → embeddings → SQLite vector store → cosine similarity retrieval → 4 specialized agents (Planner, Teacher, Practice, Evaluator). Response caching cuts API costs by 60–80% on repeat sessions. Everything runs locally — zero data leaves your machine. | Next.js 14 • TypeScript • SQLite Vector Store • Multi-LLM (OpenAI / Gemini / Claude) • RAG • LangChain • AES-256 | [Repository](https://github.com/parnish007/merostudysathy) |
+<table>
+<tr>
+<td width="50%" valign="top">
+
+**🧑‍💼 [Job Agent](https://github.com/parnish007/jobagent)**
+
+Fully autonomous end-to-end job application pipeline. Scrapes LinkedIn, Indeed & Glassdoor, scores listings via semantic search, generates ATS-optimized resumes using a DPO fine-tuned model, and autonomously submits applications. Includes a nightly RL feedback loop that retrains on real outcomes (rejection, view, interview).
+
+`LangGraph` `FastAPI` `Next.js 14` `PostgreSQL` `pgvector` `Celery` `Redis` `Playwright` `HuggingFace TRL` `FastMCP`
+
+</td>
+<td width="50%" valign="top">
+
+**🛠️ [cms-mcp](https://github.com/parnish007/cms-mcp) · [![npm](https://img.shields.io/badge/npm-cms--mcp-CB3837?style=flat-square&logo=npm&logoColor=white)](https://www.npmjs.com/package/cms-mcp)**
+
+Published MCP server giving Claude programmatic control over any REST-based CMS (Supabase, Strapi, Payload). Features 32 MCP tools, human approval gate (browser UI + SSE), policy engine with 10 rule types, semantic search, circuit breaker, audit logging & OpenAPI auto-discovery. 78 tests.
+
+`TypeScript 5.8` `Node.js` `Zod` `SQLite` `Docker` `MCP SDK`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+**📚 [MeroStudySathy](https://github.com/parnish007/merostudysathy)**
+
+Intelligent multi-agent PDF tutor. Upload any PDF → structured learning plan, interactive teaching sessions with citations, follow-up chat & evaluated practice questions. Full RAG pipeline with 4 specialized agents. Response caching cuts API costs by **60–80%**. Fully local — zero data leaves your machine.
+
+`Next.js 14` `TypeScript` `SQLite Vector Store` `OpenAI / Gemini / Claude` `RAG` `LangChain` `AES-256`
+
+</td>
+<td width="50%" valign="top">
+
+**🌐 [AI Portfolio Platform](https://parnish-aka-trilochan.vercel.app)**
+
+Dynamic portfolio with RAG-based AI chatbot, admin CMS, analytics with CSV export & Supabase backend. Live on Vercel.
+
+`Next.js 14` `Supabase` `TypeScript` `Gemini API` `Vercel`
+
+<br/>
+
+**🔗 [LFFTT](https://github.com/parnish007/lfftt)**
+
+Full-stack web app with responsive design, state management & backend integration.
+
+`React` `Node.js` `Express.js` `MongoDB`
+
+</td>
+</tr>
+</table>
 
 ---
 
-### 🔹 Deep Learning
+### 🧠 Deep Learning
 
-| Project | Description | Tech Stack | Link |
-|---------|-------------|-----------|------|
-| **Scene Sorter** | Production-grade deep learning system for scene classification and smart image organization. Built using MobileNetV2 (transfer learning), FastAPI backend, and Next.js frontend. Supports single & batch inference, automatic folder sorting, and ZIP export. Achieved ~86–87% accuracy with optimized inference latency. | TensorFlow • Keras • FastAPI • Next.js • Docker | [Repository](https://github.com/parnish007/scene-sorter) |
+<table>
+<tr>
+<td valign="top">
 
----
+**🎬 [Scene Sorter](https://github.com/parnish007/scene-sorter)**
 
-### 🔹 Classical Machine Learning
+Production-grade scene classification & smart image organization system. MobileNetV2 transfer learning with FastAPI backend + Next.js frontend. Supports single & batch inference, auto folder sorting, ZIP export. Achieved **~86–87% accuracy** with optimized inference latency.
 
-| Project | Description | Tech Stack | Link |
-|---------|-------------|-----------|------|
-| **Intelligent Product Pitch Recommendation System** | Advanced ML solution recommending the best travel products to pitch to customers. Features single & bulk predictions, probability insights, CSV upload support, and a fully interactive Streamlit UI. Solves real-life sales optimization problems. | Scikit-learn • Streamlit • Pandas | [Repository](https://github.com/parnish007/Intelligent-Product-Pitch-Recommendation-System) |
-| **Student Placement Prediction** | Complete ML system predicting student placement based on IQ, CGPA, skills, and internship experience. Includes comprehensive EDA, model building, evaluation, and Streamlit deployment. | Python • Scikit-learn • Streamlit | [Repository](https://github.com/parnish007/student_placement_project) |
-| **Customer Churn Prediction** | End-to-end ML pipeline to predict customer churn. Includes data preprocessing, feature engineering, modeling, evaluation, and deployment. | Python • Scikit-learn • Pandas • Flask | [Repository](https://github.com/parnish007/customer-churn-prediction) |
+`TensorFlow` `Keras` `FastAPI` `Next.js` `Docker`
 
----
-
-### 🔹 Data Science & Analytics
-
-| Project | Description | Link |
-|---------|-------------|------|
-| **Data Analysis Project** | Comprehensive data analysis and visualization project demonstrating insights extraction from complex datasets using statistical techniques and interactive visualizations. | [Repository](https://github.com/parnish007/DA_project) |
+</td>
+</tr>
+</table>
 
 ---
 
-### 🔹 Web Development
+### 📈 Classical Machine Learning
 
-| Project | Description | Tech Stack | Link |
-|---------|-------------|-----------|------|
-| **AI Portfolio Platform** | Dynamic portfolio website with a RAG-based AI chatbot, admin CMS, analytics with CSV export, and Supabase backend. Deployed on Vercel. | Next.js 14 • Supabase • TypeScript • Gemini API • Vercel | [Live](https://parnish-aka-trilochan.vercel.app) |
-| **LFFTT** | Full-stack web application showcasing modern web development practices with responsive design, state management, and backend integration. | React • Node.js • Express.js • MongoDB | [Repository](https://github.com/parnish007/lfftt) |
+<table>
+<tr>
+<td width="50%" valign="top">
+
+**🎯 [Intelligent Product Pitch Recommendation](https://github.com/parnish007/Intelligent-Product-Pitch-Recommendation-System)**
+
+Advanced ML solution recommending optimal travel products. Single & bulk predictions, probability insights, CSV upload & interactive Streamlit UI.
+
+`Scikit-learn` `Streamlit` `Pandas`
+
+</td>
+<td width="50%" valign="top">
+
+**🎓 [Student Placement Prediction](https://github.com/parnish007/student_placement_project)**
+
+Predicts placement based on IQ, CGPA, skills & internship experience. Full EDA, model building, evaluation & Streamlit deployment.
+
+`Python` `Scikit-learn` `Streamlit`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+**📉 [Customer Churn Prediction](https://github.com/parnish007/customer-churn-prediction)**
+
+End-to-end ML pipeline with preprocessing, feature engineering, modeling & Flask deployment.
+
+`Python` `Scikit-learn` `Pandas` `Flask`
+
+</td>
+<td width="50%" valign="top">
+
+**📊 [Data Analysis Project](https://github.com/parnish007/DA_project)**
+
+Comprehensive EDA & visualization with statistical techniques and interactive charts.
+
+`Python` `Pandas` `Matplotlib` `Seaborn`
+
+</td>
+</tr>
+</table>
 
 ---
 
 ## 📊 GitHub Statistics
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=parnish007&show_icons=true&theme=radical&hide_border=true" alt="GitHub Stats" height="160" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=parnish007&layout=compact&theme=radical&hide_border=true" alt="Top Languages" height="160" />
-</p>
+<div align="center">
 
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=parnish007&theme=radical&hide_border=true" alt="GitHub Streak" height="120" />
-</p>
+<img src="https://github-readme-stats.vercel.app/api?username=parnish007&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=7C6FFF&icon_color=43E8AD&text_color=C9D1D9" height="170" alt="GitHub Stats"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=parnish007&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=7C6FFF&text_color=C9D1D9" height="170" alt="Top Languages"/>
+
+</div>
+
+<div align="center">
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=parnish007&theme=tokyonight&hide_border=true&background=0D1117&ring=7C6FFF&fire=FF6B6B&currStreakLabel=43E8AD" height="130" alt="GitHub Streak"/>
+
+</div>
+
+<div align="center">
+
+[![trophy](https://github-profile-trophy.vercel.app/?username=parnish007&theme=tokyonight&no-frame=true&row=1&column=7)](https://github.com/parnish007)
+
+</div>
 
 ---
 
 ## 🎯 Current Focus & Goals
 
-- 🔬 Exploring advanced **Transformer architectures** and **Large Language Models (LLMs)**
-- 🤖 Building end-to-end **production-grade agentic AI systems** with real-world automation
-- 🧠 Researching **MCP (Model Context Protocol)** — tool design, policy engines, cross-LLM memory
-- 🔁 Implementing **RL feedback loops** for self-improving AI pipelines
-- 📚 Contributing to **open-source AI/ML projects**
-- 🌍 Working on **real-world problems** that have meaningful impact
+| # | Area | What I'm doing |
+|---|------|----------------|
+| 🔬 | **Transformer Architectures** | Exploring advanced LLM internals and architecture variants |
+| 🤖 | **Agentic AI Systems** | Building production-grade autonomous pipelines with real-world automation |
+| 🧠 | **MCP Research** | Tool design, policy engines, cross-LLM memory & orchestration |
+| 🔁 | **RL Feedback Loops** | Self-improving AI pipelines that learn from real outcomes |
+| 📚 | **Open Source** | Contributing to AI/ML projects & publishing tools |
+| 🌍 | **Real-World Impact** | Solving problems that actually matter |
 
 ---
 
 ## 💡 Philosophy
 
-> *"I believe in learning by doing. Every project is an opportunity to deepen understanding and create value. My mission is to build impactful AI/ML solutions and contribute to cutting-edge research and development."*
+<div align="center">
 
-**Fun Fact**: I enjoy learning *any* technology required to solve real-world problems end-to-end. From data engineering to deployment, I care about the complete pipeline.
+> *"I believe in learning by doing. Every project is an opportunity to deepen understanding and create value.*
+> *My mission is to build impactful AI/ML solutions and contribute to cutting-edge research and development."*
+
+**⚡ Fun Fact:** I enjoy learning *any* technology needed to solve real-world problems end-to-end — from data engineering to deployment, I care about the **complete pipeline**.
+
+</div>
 
 ---
 
-## 📞 Let's Collaborate!
+## 🤝 Let's Collaborate!
 
-I'm always interested in:
-- 🤝 Collaborating on AI/ML and agentic AI projects
-- 💬 Discussing emerging technologies, MCP, and LLM tooling
-- 🎓 Sharing knowledge and learning from others
-- 🚀 Building solutions to real-world problems
+<div align="center">
 
-**Feel free to reach out!** Connect with me on [LinkedIn](https://www.linkedin.com/in/trilochan-sharma-995851370/), [Twitter](https://twitter.com/parnish007), or [Email](mailto:parnishklpo@gmail.com).
+I'm always open to connecting on:
+
+| 🤝 AI/ML Collaboration | 💬 LLM & MCP Discussions | 🎓 Knowledge Sharing | 🚀 Real-World Problem Solving |
+|:---:|:---:|:---:|:---:|
+
+**Reach out → [LinkedIn](https://www.linkedin.com/in/trilochan-sharma-995851370/) · [Twitter](https://twitter.com/parnish007) · [Email](mailto:parnishklpo@gmail.com)**
+
+</div>
 
 ---
 
 ## ⭐ Support My Work
 
-If you find my projects useful or enjoy my work, please consider:
-- ⭐ **Starring** my repositories
-- 🔗 **Sharing** my projects with others
-- 💬 **Providing feedback** and suggestions
-- 🤝 **Contributing** to open-source projects
+If you find my projects useful — **star a repo, share it, or drop feedback!** Every ⭐ keeps the momentum going.
 
 ---
 
-<p align="center">
-  <em>Made with ❤️ by Parnish | Always learning, always building</em>
-</p>
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer&animation=twinkling" width="100%"/>
+
+*Made with ❤️ by Parnish — Always learning, always building*
+
+[![Profile Views](https://komarev.com/ghpvc/?username=parnish007&color=7C6FFF&style=flat-square&label=Profile+Views)](https://github.com/parnish007)
+
+</div>
