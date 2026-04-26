@@ -1,12 +1,12 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Parnish+Trilochan&fontSize=50&fontColor=fff&animation=twinkling&fontAlignY=36&desc=AI+ML+and+Full-Stack+Engineer+from+Nepal&descAlignY=58&descSize=18" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Parnish+Trilochan&fontSize=50&fontColor=fff&animation=twinkling&fontAlignY=36&desc=AI+ML+Researcher+and+Full-Stack+Engineer+from+Nepal&descAlignY=58&descSize=18" width="100%" />
 
 </div>
 
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=7C6FFF&center=true&vCenter=true&width=650&lines=Building+production-grade+Agentic+AI+systems+%F0%9F%A4%96;RAG+Pipelines+%7C+LLM+Fine-tuning+%7C+MCP;Full-Stack+%7C+DevOps+%7C+IoT+%7C+Edge+AI;Always+learning%2C+always+building+%E2%9A%A1)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=7C6FFF&center=true&vCenter=true&width=700&lines=Published+AI+Researcher+%F0%9F%93%84+%7C+Zenodo+DOI+Verified;Agentic+AI+%7C+RAG+Pipelines+%7C+LLM+Fine-tuning+%7C+MCP;Full-Stack+%7C+DevOps+%7C+IoT+%7C+Edge+AI;Always+learning%2C+always+building+%E2%9A%A1)](https://git.io/typing-svg)
 
 </div>
 
@@ -19,6 +19,7 @@
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:parnishklpo@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/parnish007)
 [![Portfolio](https://img.shields.io/badge/Portfolio-7C6FFF?style=for-the-badge&logo=vercel&logoColor=white)](https://parnish-aka-trilochan.vercel.app)
+[![Research](https://img.shields.io/badge/Zenodo-Published_Researcher-1682D4?style=for-the-badge&logo=zenodo&logoColor=white)](https://doi.org/10.5281/zenodo.19784778)
 
 </div>
 
@@ -30,8 +31,10 @@
 class Trilochan:
     name        = "Parnish (Trilochan Sharma)"
     location    = "Nepal 🇳🇵"
-    role        = "AI/ML & Full-Stack Engineer"
-    focus       = ["Agentic AI", "RAG Systems", "LLM Fine-tuning", "MCP"]
+    role        = "AI/ML Researcher & Full-Stack Engineer"
+    research    = ["Agentic Memory Systems", "Adversarial AI Defense", "RAG Pipelines"]
+    focus       = ["Agentic AI", "LLM Fine-tuning", "MCP", "RLHF"]
+    published   = True  # doi.org/10.5281/zenodo.19784778
     mission     = "Build impactful AI/ML solutions & contribute to cutting-edge research"
     fun_fact    = "I learn any tech needed to own the full pipeline — soup to nuts 🍜"
 
@@ -44,11 +47,68 @@ class Trilochan:
 <table align="center">
 <tr>
 <td align="center">🚀 <b>Problem Solver</b><br/><sub>End-to-end across AI, ML, DL,<br/>NLP, Web, App & IoT</sub></td>
-<td align="center">💡 <b>Documentation First</b><br/><sub>Every project, experiment &<br/>learning journey recorded</sub></td>
+<td align="center">📄 <b>Published Researcher</b><br/><sub>Peer-reviewed work on<br/>agentic AI memory systems</sub></td>
 <td align="center">🌱 <b>Lifelong Learner</b><br/><sub>Always upskilling in AI/ML,<br/>math & modern engineering</sub></td>
 <td align="center">⚡ <b>Passion</b><br/><sub>Emerging tech, complex problems,<br/>mastering new frameworks</sub></td>
 </tr>
 </table>
+
+---
+
+## 📄 Research & Publications
+
+<div align="center">
+
+### 🏆 Latest Publication — Zenodo (2025)
+
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.19784778-1682D4?style=for-the-badge&logo=zenodo&logoColor=white)](https://doi.org/10.5281/zenodo.19784778)
+[![Paper](https://img.shields.io/badge/Paper-v2.3_Final-FF6B35?style=for-the-badge&logo=readthedocs&logoColor=white)](https://doi.org/10.5281/zenodo.19784778)
+[![Code](https://img.shields.io/badge/Code-ContextForge-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/parnish007/contextforge)
+
+</div>
+
+<table align="center">
+<tr>
+<td>
+
+**ContextForge: Agentic Memory for AI-Assisted Development**
+*Trilochan Sharma — Independent Researcher, 2025*
+
+> Every AI coding session starts blank. Decisions made last week, architectural tradeoffs, *why* that library was chosen — all gone. **ContextForge** solves this with a persistent, queryable knowledge graph that gives your IDE's AI exactly the context it needs — nothing more, nothing less.
+
+| Metric | Result |
+|:---|:---:|
+| 🥇 Memory Quality Rank | **#1 of 6 systems** |
+| 🧠 Memory Integrity Score | **MIS = 0.801** |
+| 🛡️ Adversarial Block Rate (paper mode) | **90%** |
+| 🎯 False Positive Rate (production) | **1%** |
+| ⚡ Token Savings vs CLAUDE.md | **93%** |
+| 🔬 Composite Safety Index | **Φ = 79.7%** |
+| 🧪 Benchmark Tests | **990 passing** |
+
+</td>
+</tr>
+</table>
+
+<div align="center">
+
+<details>
+<summary><b>📋 BibTeX Citation</b></summary>
+
+```bibtex
+@software{sharma_2025_contextforge,
+  author    = {Sharma, Trilochan},
+  title     = {ContextForge: Agentic Memory for AI-Assisted Development},
+  year      = {2025},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.19784778},
+  url       = {https://doi.org/10.5281/zenodo.19784778}
+}
+```
+
+</details>
+
+</div>
 
 ---
 
@@ -57,12 +117,16 @@ class Trilochan:
 ```mermaid
 mindmap
   root((TRILOCHAN ENGINE))
+    Research
+      Agentic Memory
+      Adversarial AI
+      RAG Systems
+      Benchmarking
     AI/ML
       Supervised Learning
       Unsupervised Learning
       Deep Learning
       Transformers
-      RAG Systems
       RLHF
     Backend
       FastAPI
@@ -355,6 +419,24 @@ Full-stack web app with responsive design, state management & backend integratio
 
 ---
 
+### 🔬 Published Research
+
+<table>
+<tr>
+<td width="100%" valign="top">
+
+**📄 [ContextForge](https://github.com/parnish007/contextforge) · [![DOI](https://img.shields.io/badge/DOI-Zenodo-1682D4?style=flat-square&logo=zenodo&logoColor=white)](https://doi.org/10.5281/zenodo.19784778)**
+
+Agentic memory system giving AI coding assistants persistent memory across sessions. Ranked #1 of 6 systems in memory quality (MIS=0.801). 90% adversarial block rate, 93% token savings, 990 benchmark tests, Φ=79.7% composite safety index.
+
+`Python` `SQLite` `BM25` `AES-256-GCM` `MCP` `FastAPI` `LangChain` `Docker`
+
+</td>
+</tr>
+</table>
+
+---
+
 ### 🧠 Deep Learning
 
 <table>
@@ -459,11 +541,11 @@ Comprehensive EDA & visualization with statistical techniques and interactive ch
 
 | # | Area | What I'm doing |
 |---|------|----------------|
+| 📄 | **AI Research** | Publishing work on agentic memory, adversarial defense & RAG systems |
 | 🔬 | **Transformer Architectures** | Exploring advanced LLM internals and architecture variants |
 | 🤖 | **Agentic AI Systems** | Building production-grade autonomous pipelines with real-world automation |
 | 🧠 | **MCP Research** | Tool design, policy engines, cross-LLM memory & orchestration |
 | 🔁 | **RL Feedback Loops** | Self-improving AI pipelines that learn from real outcomes |
-| 📚 | **Open Source** | Contributing to AI/ML projects & publishing tools |
 | 🌍 | **Real-World Impact** | Solving problems that actually matter |
 
 ---
