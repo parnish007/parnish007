@@ -72,7 +72,7 @@ class Trilochan:
 <td>
 
 **ContextForge: Agentic Memory for AI-Assisted Development**
-*Trilochan Sharma — Independent Researcher, 2025*
+*Trilochan Sharma — Independent Researcher, 2026*
 
 > Every AI coding session starts blank. Decisions made last week, architectural tradeoffs, *why* that library was chosen — all gone. **ContextForge** solves this with a persistent, queryable knowledge graph that gives your IDE's AI exactly the context it needs — nothing more, nothing less.
 
@@ -99,7 +99,7 @@ class Trilochan:
 @software{sharma_2025_contextforge,
   author    = {Sharma, Trilochan},
   title     = {ContextForge: Agentic Memory for AI-Assisted Development},
-  year      = {2025},
+  year      = {2026},
   publisher = {Zenodo},
   doi       = {10.5281/zenodo.19784778},
   url       = {https://doi.org/10.5281/zenodo.19784778}
