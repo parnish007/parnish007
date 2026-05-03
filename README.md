@@ -59,7 +59,7 @@ class Trilochan:
 
 <div align="center">
 
-### 🏆 Latest Publication — Zenodo (2025)
+### 🏆 Latest Publication — Zenodo (2026)
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.19784778-1682D4?style=for-the-badge&logo=zenodo&logoColor=white)](https://doi.org/10.5281/zenodo.19784778)
 [![Paper](https://img.shields.io/badge/Paper-v2.3_Final-FF6B35?style=for-the-badge&logo=readthedocs&logoColor=white)](https://doi.org/10.5281/zenodo.19784778)
