@@ -2,7 +2,7 @@ name: Generate Activity Graph
 
 on:
   schedule:
-    - cron: "0 */12 * * *"  # every 12 hours
+    - cron: "0 */1 * * *"  # every 12 hours
   workflow_dispatch:
 
 jobs:
