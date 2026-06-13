@@ -2,11 +2,11 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=190&section=header&text=Trilochan+Sharma&fontSize=52&fontColor=fff&animation=fadeIn&fontAlignY=36&desc=AI+Researcher+and+Engineer+building+agentic+systems+end+to+end&descAlignY=58&descSize=17" width="100%" />
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&pause=1200&color=FF6B35&center=true&vCenter=true&width=640&lines=Published+AI+researcher+with+a+Zenodo+DOI;Agentic+memory+%2B+RAG+%2B+MCP+systems;I+ship+the+whole+pipeline%2C+research+to+prod)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&pause=1200&color=FF6B35&center=true&vCenter=true&width=640&lines=2x+published+research%2C+both+with+Zenodo+DOIs;Agentic+memory+%2B+multi-agent+protocols+%2B+RAG;I+ship+the+whole+pipeline%2C+research+to+prod)](https://git.io/typing-svg)
 
 <br/>
 
-[![Research](https://img.shields.io/badge/Zenodo-Published_Research-FF6B35?style=for-the-badge&logo=zenodo&logoColor=white)](https://doi.org/10.5281/zenodo.19784778)
+[![Research](https://img.shields.io/badge/Zenodo-2_Papers_Published-FF6B35?style=for-the-badge&logo=zenodo&logoColor=white)](https://doi.org/10.5281/zenodo.19784778)
 [![Portfolio](https://img.shields.io/badge/Portfolio-Live-181717?style=for-the-badge&logo=vercel&logoColor=white)](https://parnish-aka-trilochan.vercel.app)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/trilochan-sharma-995851370/)
 [![Email](https://img.shields.io/badge/Email-parnishklpo-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:parnishklpo@gmail.com)
@@ -23,10 +23,13 @@
 class Trilochan:
     location = "Nepal"
     role     = "AI/ML Researcher and Full-Stack Engineer"
-    spike    = "Agentic memory systems, RAG pipelines, MCP tooling"
+    spike    = "Agentic memory systems, multi-agent protocols, RAG pipelines, MCP tooling"
     breadth  = ["LLM fine-tuning", "Backend systems", "IoT and Edge AI"]
     proof    = {
-        "published_research": "doi.org/10.5281/zenodo.19784778",
+        "published_research": [
+            "doi.org/10.5281/zenodo.19784778",  # ContextForge
+            "doi.org/10.5281/zenodo.20671083",  # TOAP
+        ],
         "shipped_npm_package": "cms-mcp",
         "live_products": ["AI portfolio platform", "autonomous job agent"],
     }
@@ -40,6 +43,48 @@ I learn whatever the problem requires and own the full pipeline — from data an
 ---
 
 ## 📄 Research
+
+<div align="center">
+
+### TOAP: The Token-Optimized Agent Protocol
+
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20671083-1682D4?style=for-the-badge&logo=zenodo&logoColor=white)](https://doi.org/10.5281/zenodo.20671083)
+[![Code](https://img.shields.io/badge/Code-TOAP-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/parnish007/TOAP)
+
+</div>
+
+Multi-agent LLM pipelines forward a growing transcript into every downstream prompt, so token cost compounds with pipeline depth. TOAP proposes a broker-mediated architecture with a two-plane wire format, a capability-lattice security model, and a reference-materialization spectrum (text / context ID / KV-cache pointer) chosen per call by a cost model — then measures, rather than assumes, where each strategy actually wins.
+
+<div align="center">
+
+| Result | Metric |
+|:---|:---:|
+| Token savings vs. naive baseline | **~1.9×** (reference) |
+| Losslessness (8-fact task) | **8/8 reference vs. 6/8 summary** |
+| Cross-vendor replication | Qwen2.5-7B & Mistral-7B, same direction |
+| Prompt-injection block rate | **40/40**, 0 false positives on 14 benign requests |
+| KV-cache prefill speedup | up to **~180×** (35/36 cells byte-identical) |
+| Implementation | Rust, **29 passing tests** |
+
+</div>
+
+<details>
+<summary><b>📋 BibTeX</b></summary>
+
+```bibtex
+@article{sharma_2026_toap,
+  author    = {Sharma, Trilochan},
+  title     = {TOAP: The Token-Optimized Agent Protocol — Reference, Summary, or KV Cache? Measuring How Multi-Agent Systems Should Share Context},
+  year      = {2026},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.20671083},
+  url       = {https://doi.org/10.5281/zenodo.20671083}
+}
+```
+
+</details>
+
+---
 
 <div align="center">
 
@@ -152,6 +197,7 @@ Production-grade scene classification and image organization. MobileNetV2 transf
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
 
 </div>
@@ -169,7 +215,7 @@ Production-grade scene classification and image organization. MobileNetV2 transf
 
 </div>
 
-**Agentic AI / RAG** — multi-agent orchestration, vector search, MCP tool design, policy engines, prompt engineering
+**Agentic AI / RAG / Multi-Agent Protocols** — multi-agent orchestration, vector search, MCP tool design, policy engines, prompt engineering, agent-to-agent protocols
 
 <div align="center">
 
@@ -215,7 +261,7 @@ Production-grade scene classification and image organization. MobileNetV2 transf
 
 | Area | What I'm doing |
 |:---|:---|
-| 🔬 Research | Agentic memory, adversarial defense, and RAG evaluation — follow-up work to ContextForge |
+| 🔬 Research | Multi-agent context-sharing protocols (TOAP) and agentic memory / adversarial defense (ContextForge) |
 | 🌾 AgriTech | Architecting an offline-first precision agriculture platform for smallholder farmers in South Asia |
 | 🧠 LLM internals | Implementing transformer architectures from scratch in PyTorch — attention, RoPE, MLA |
 | ⚙️ Systems | Working through Designing Data-Intensive Applications, building distributed-systems intuition |
