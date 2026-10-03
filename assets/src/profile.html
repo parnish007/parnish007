@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Profile animations</title>
+<style>
+  /* Paper & Ink. Fonts: Fraunces, IBM Plex Sans and Mono, Caveat (SIL OFL 1.1, licences in fonts/). */
+  @font-face { font-family: "Fraunces"; src: url("fonts/fraunces.woff2") format("woff2"); font-weight: 100 900; font-display: block; }
+  @font-face { font-family: "PSans"; src: url("fonts/plex-sans.woff2") format("woff2"); font-weight: 100 700; font-display: block; }
+  @font-face { font-family: "PMono"; src: url("fonts/plex-mono-400.woff2") format("woff2"); font-weight: 400; font-display: block; }
+  @font-face { font-family: "PMono"; src: url("fonts/plex-mono-600.woff2") format("woff2"); font-weight: 600; font-display: block; }
+  @font-face { font-family: "Caveat"; src: url("fonts/caveat.woff2") format("woff2"); font-weight: 400 700; font-display: block; }
+  html, body { margin: 0; background: #1b1712; }
+  canvas { display: block; }
+  body.preview { min-height: 100vh; display: grid; place-items: center; }
+  body.preview canvas { max-width: 96vw; height: auto; box-shadow: 0 20px 60px rgba(0,0,0,.5); }
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<script>
+"use strict";
+// Usage: profile.html?scene=hero|about|toap|contextforge|footer. Every frame is a pure function of time t.
+const SCENE = new URLSearchParams(location.search).get("scene") || "hero";
+const PAL = {
+  paper: "#EFE8DA", card: "#F8F3E8", ink: "#1B1712", faded: "#6D6457", hair: "rgba(27,23,18,0.18)",
+  orange: "#FF6B35", orangeInk: "#C94A1C", gold: "#B8862B", green: "#2F6B4F", blue: "#1D5FA8", red: "#B3261E",
+};
+const FONT = { serif: '"Fraunces", Georgia, serif', sans: '"PSans", "Segoe UI", sans-serif',
+  mono: '"PMono", Consolas, monospace', hand: '"Caveat", "Segoe Script", cursive' };
+
+/* ---------------- engine ---------------- */
+function rng(seed) {
+  return function () {
+    seed |= 0; seed = (seed + 0x6D2B79F5) | 0;
+    let t = Math.imul(seed ^ (seed >>> 15), 1 | seed);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
+const lerp = (a, b, t) => a + (b - a) * t;
+const range = (t, a, b) => clamp((t - a) / (b - a));
+const E = {
+  outCubic: (x) => 1 - (1 - x) ** 3,
+  inOutCubic: (x) => (x < 0.5 ? 4 * x * x * x : 1 - (-2 * x + 2) ** 3 / 2),
+  outBack: (x, s = 1.4) => 1 + (s + 1) * (x - 1) ** 3 + s * (x - 1) ** 2,
+  inOutSine: (x) => -(Math.cos(Math.PI * x) - 1) / 2,
+};
+function spring(t, { stiffness = 170, damping = 18 } = {}) {
+  if (t <= 0) return 0;
+  const w0 = Math.sqrt(stiffness), z = damping / (2 * w0);
+  if (z < 1) { const wd = w0 * Math.sqrt(1 - z * z); return 1 - Math.exp(-z * w0 * t) * (Math.cos(wd * t) + (z * w0 / wd) * Math.sin(wd * t)); }
+  return 1 - Math.exp(-w0 * t) * (1 + w0 * t);
+}
+function hash(n) { const s = Math.sin(n * 127.1) * 43758.5453; return s - Math.floor(s); }
+function noise1(x) { const i = Math.floor(x), f = x - i, u = f * f * (3 - 2 * f); return lerp(hash(i), hash(i + 1), u) * 2 - 1; }
+function rgba(hex, a) { const n = parseInt(hex.slice(1), 16); return `rgba(${(n >> 16) & 255},${(n >> 8) & 255},${n & 255},${a})`; }
+function font(c, o) { c.font = `${o.italic ? "italic " : ""}${o.weight || 400} ${o.size || 20}px ${o.font || FONT.sans}`; c.letterSpacing = `${o.track || 0}px`; }
+function text(c, s, x, y, o = {}) {
+  c.save(); font(c, o);
+  c.textAlign = o.align || "left"; c.textBaseline = o.base || "alphabetic";
+  c.globalAlpha *= o.alpha ?? 1; c.fillStyle = o.color || PAL.ink;
+  if (o.rot) { c.translate(x, y); c.rotate(o.rot); c.fillText(s, 0, 0); } else c.fillText(s, x, y);
+  c.restore();
+}
+function measure(c, s, o = {}) { c.save(); font(c, o); const w = c.measureText(s).width; c.restore(); return w; }
+// Text revealed left to right as if inked by a pen, with the nib visible at the edge.
+function inked(c, s, x, y, p, o = {}) {
+  if (p <= 0) return;
+  const w = measure(c, s, o), h = (o.size || 20) * 1.4;
+  c.save(); c.beginPath(); c.rect(x - 4, y - h, (w + 8) * p, h * 1.5); c.clip(); text(c, s, x, y, o); c.restore();
+  if (p < 1) { c.fillStyle = o.nib || PAL.orange; c.beginPath(); c.arc(x + w * p, y - (o.size || 20) * 0.32, 3, 0, Math.PI * 2); c.fill(); }
+}
+function partial(c, at, p, steps = 50) {
+  if (p <= 0) return;
+  c.beginPath();
+  for (let i = 0; i <= steps; i++) { const q = at((i / steps) * p); i ? c.lineTo(q.x, q.y) : c.moveTo(q.x, q.y); }
+  c.stroke();
+}
+// A hand-drawn underline: a gently wobbling stroke that draws itself.
+function underline(c, x, y, w, p, seed, color = PAL.orange) {
+  const r = rng(seed), a = r() * 3, b = r() * 3;
+  c.save(); c.strokeStyle = color; c.lineWidth = 3; c.lineCap = "round";
+  partial(c, (q) => ({ x: x + w * q, y: y + Math.sin(q * 6 + a) * 1.6 + Math.sin(q * 13 + b) * 0.8 + q * 2 }), p, 60);
+  c.restore();
+}
+// A rubber stamp: lands from above with a slight rotation, worn edges, a faint ink ring on impact.
+function stamp(c, label, x, y, lt, o = {}) {
+  if (lt <= 0) return;
+  const size = o.size || 15, p = E.outCubic(clamp(lt / 0.22)), s = lerp(1.7, 1, p), ring = range(lt, 0.18, 0.6);
+  c.save(); c.translate(x, y); c.rotate(((o.rot ?? -2.5) * Math.PI) / 180);
+  font(c, { font: FONT.mono, weight: 600, size, track: o.track ?? 2 });
+  const w = c.measureText(label).width + 30, h = size * 2.3, col = o.color || PAL.orangeInk;
+  if (ring > 0 && ring < 1) {
+    c.strokeStyle = rgba(col, 0.25 * (1 - ring)); c.lineWidth = 2;
+    c.beginPath(); c.roundRect(-w / 2 - 14 * ring, -h / 2 - 14 * ring, w + 28 * ring, h + 28 * ring, 10); c.stroke();
+  }
+  c.scale(s, s); c.globalAlpha *= clamp(lt / 0.1) * 0.94;
+  c.strokeStyle = col; c.lineWidth = 2.6; c.beginPath(); c.roundRect(-w / 2, -h / 2, w, h, 7); c.stroke();
+  c.fillStyle = col; c.textAlign = "center"; c.textBaseline = "middle"; c.fillText(label, 0, 1);
+  const r = rng(label.length * 31 + Math.round(x));   // worn ink
+  c.fillStyle = rgba(PAL.paper, 0.55);
+  for (let i = 0; i < 26; i++) c.fillRect(-w / 2 + r() * w, -h / 2 + r() * h, 1 + r() * 2.5, 1 + r() * 2);
+  c.restore();
+}
+function card(c, x, y, w, h, o = {}) {   // printed card with a hard offset shadow
+  c.save();
+  c.fillStyle = rgba(PAL.ink, o.shadow ?? 0.1); c.beginPath(); c.roundRect(x + 6, y + 6, w, h, o.r || 14); c.fill();
+  c.fillStyle = o.fill || PAL.card; c.beginPath(); c.roundRect(x, y, w, h, o.r || 14); c.fill();
+  c.strokeStyle = o.stroke || PAL.hair; c.lineWidth = 1.5; c.stroke();
+  c.restore();
+}
+function typedCount(times, t) { let n = 0; while (n < times.length && times[n] <= t) n++; return n; }
+function cursor(c, x, y, size, t, typing, color = PAL.orange) {
+  if (typing || Math.floor(t / 0.5) % 2 === 0) { c.fillStyle = color; c.fillRect(x + 2, y - size * 0.82, size * 0.55, size * 1.0); }
+}
+function paperTexture(W, H, seed) {
+  const p = document.createElement("canvas"); p.width = W; p.height = H;
+  const pc = p.getContext("2d"), r = rng(seed);
+  pc.fillStyle = PAL.paper; pc.fillRect(0, 0, W, H);
+  for (let i = 0; i < (W * H) / 26000; i++) {
+    const x = r() * W, y = r() * H, rad = 60 + r() * 300, a = 0.012 + r() * 0.028;
+    const g = pc.createRadialGradient(x, y, 0, x, y, rad);
+    g.addColorStop(0, `rgba(120,98,66,${a})`); g.addColorStop(1, "rgba(120,98,66,0)");
+    pc.fillStyle = g; pc.fillRect(x - rad, y - rad, rad * 2, rad * 2);
+  }
+  for (let i = 0; i < (W * H) / 900; i++) {
+    const x = r() * W, y = r() * H, a = r() * Math.PI, l = 3 + r() * 12;
+    pc.strokeStyle = `rgba(92,76,54,${0.02 + r() * 0.045})`; pc.lineWidth = 0.6 + r() * 0.5;
+    pc.beginPath(); pc.moveTo(x, y); pc.lineTo(x + Math.cos(a) * l, y + Math.sin(a) * l); pc.stroke();
+  }
+  const vg = pc.createRadialGradient(W / 2, H / 2, Math.min(W, H) * 0.3, W / 2, H / 2, Math.max(W, H) * 0.75);
+  vg.addColorStop(0, "rgba(80,60,30,0)"); vg.addColorStop(1, "rgba(80,60,30,0.16)");
+  pc.fillStyle = vg; pc.fillRect(0, 0, W, H);
+  return p;
+}
+// every loop starts and ends on blank paper, so the GIF repeats without a jump
+function fadeAll(t, dur) { return 1 - E.inOutCubic(range(t, dur - 0.9, dur - 0.15)); }
+
+/* ---------------- scenes ---------------- */
+const SCENES = {};
+
+// 1. HERO: name, handwritten alias, typed tagline, and an agent network passing context.
+SCENES.hero = { w: 1200, h: 400, dur: 8.5, draw(c, t, S) {
+  c.globalAlpha = fadeAll(t, S.dur);
+  const X = 70;
+  const kp = E.outCubic(range(t, 0.25, 0.8));
+  text(c, "AI RESEARCHER & ENGINEER  ·  NEPAL", X + (1 - kp) * -16, 112, { font: FONT.mono, weight: 600, size: 15, track: 3.5, color: PAL.faded, alpha: kp });
+  inked(c, "Trilochan Sharma", X, 196, E.inOutCubic(range(t, 0.5, 1.6)), { font: FONT.serif, weight: 600, size: 78, track: -1.5 });
+  const nw = measure(c, "Trilochan Sharma", { font: FONT.serif, weight: 600, size: 78, track: -1.5 });
+  // handwritten alias with an arrow, as if added in the margin
+  const ap = range(t, 1.7, 2.4);
+  if (ap > 0) {
+    c.save(); c.translate(X + nw - 150, 246); c.rotate(-0.05);
+    inked(c, "aka parnish007", 0, 0, ap, { font: FONT.hand, weight: 600, size: 34, color: PAL.orangeInk, nib: PAL.orangeInk });
+    c.restore();
+  }
+  // typed tagline
+  const line = "> building agentic systems end to end", T0 = 2.4;
+  const times = [...line].map((_, i) => T0 + i * 0.038 + (i > 1 ? 0.15 : 0));
+  const n = typedCount(times, t), done = times[times.length - 1];
+  const o = { font: FONT.mono, size: 22, color: PAL.ink };
+  text(c, line.slice(0, n), X, 314, o);
+  if (t > T0 - 0.3) cursor(c, X + measure(c, line.slice(0, n), o), 314, 22, t, t < done + 0.3);
+  const fp = E.outCubic(range(t, done + 0.4, done + 1.0));
+  text(c, "2 published papers  ·  1 npm package  ·  2 live products", X, 352 + (1 - fp) * 8,
+    { font: FONT.mono, size: 15, color: PAL.faded, alpha: fp });
+
+  // agent network: five agents around a shared context; packets travel agent -> context -> agent
+  const O = { x: 930, y: 205 }, R = 128, names = ["plan", "retrieve", "code", "review", "memory"];
+  const nodes = names.map((nm, i) => {
+    const a = -Math.PI / 2 + (i / 5) * Math.PI * 2;
+    return { nm, x: O.x + Math.cos(a) * R * 1.25 + noise1(t * 0.5 + i * 7) * 3, y: O.y + Math.sin(a) * R + noise1(t * 0.5 + i * 7 + 3) * 3 };
+  });
+  c.save(); c.lineCap = "round";
+  nodes.forEach((nd, i) => {   // spokes ink themselves in
+    c.strokeStyle = rgba(PAL.ink, 0.5); c.lineWidth = 1.6;
+    partial(c, (q) => ({ x: lerp(O.x, nd.x, q), y: lerp(O.y, nd.y, q) }), E.inOutCubic(range(t, 1.0 + i * 0.1, 1.6 + i * 0.1)), 12);
+    const nx = nodes[(i + 1) % 5];
+    c.strokeStyle = rgba(PAL.ink, 0.14); c.setLineDash([3, 6]);
+    partial(c, (q) => ({ x: lerp(nd.x, nx.x, q), y: lerp(nd.y, nx.y, q) }), E.inOutCubic(range(t, 1.6 + i * 0.08, 2.2 + i * 0.08)), 12);
+    c.setLineDash([]);
+  });
+  c.restore();
+  // packets (the motion that keeps the frame alive)
+  const live = range(t, 2.2, 2.6);
+  if (live > 0) nodes.forEach((nd, i) => {
+    const ph = (t * 0.55 + i * 0.37) % 1, to = nodes[(i + 2) % 5];
+    const p = ph < 0.5 ? { x: lerp(nd.x, O.x, E.inOutSine(ph * 2)), y: lerp(nd.y, O.y, E.inOutSine(ph * 2)) }
+      : { x: lerp(O.x, to.x, E.inOutSine(ph * 2 - 1)), y: lerp(O.y, to.y, E.inOutSine(ph * 2 - 1)) };
+    c.save(); c.globalAlpha *= live;
+    c.fillStyle = PAL.orange; c.strokeStyle = PAL.ink; c.lineWidth = 1.5;
+    c.beginPath(); c.arc(p.x, p.y, 5.5, 0, Math.PI * 2); c.fill(); c.stroke(); c.restore();
+  });
+  nodes.forEach((nd, i) => {
+    const s = spring(t - 0.6 - i * 0.09, { stiffness: 200, damping: 16 });
+    if (s <= 0) return;
+    c.save(); c.translate(nd.x, nd.y); c.scale(s, s);
+    const w = measure(c, nd.nm, { font: FONT.mono, size: 14 }) + 26;
+    card(c, -w / 2, -17, w, 34, { r: 17, shadow: 0.12 });
+    text(c, nd.nm, 0, 5, { font: FONT.mono, size: 14, align: "center" });
+    c.restore();
+  });
+  const cs = spring(t - 0.5, { stiffness: 180, damping: 15 }), pulse = 1 + 0.06 * Math.sin(t * 4) * live;
+  c.save(); c.translate(O.x, O.y); c.scale(cs * pulse, cs * pulse);
+  c.fillStyle = PAL.ink; c.beginPath(); c.arc(0, 0, 34, 0, Math.PI * 2); c.fill();
+  text(c, "ctx", 0, 6, { font: FONT.mono, weight: 600, size: 16, color: PAL.paper, align: "center" });
+  c.restore();
+} };
+
+// 2. ABOUT: the README's class types itself, then the mission prints and is underlined by hand.
+const ABOUT = [
+  'class Trilochan:',
+  '    location = "Nepal"',
+  '    role     = "AI/ML Researcher and Full-Stack Engineer"',
+  '    spike    = ["agentic memory", "multi-agent protocols", "RAG", "MCP tooling"]',
+  '    proof    = {"papers": 2, "npm": "cms-mcp", "live_products": 2}',
+  '',
+  '    def mission(self):',
+  '        return "Build AI systems that survive contact with the real world"',
+];
+const ABOUT_TIMES = (() => {
+  const out = []; let t = 0.7; const r = rng(5);
+  ABOUT.forEach((ln) => { const row = []; for (let i = 0; i < ln.length; i++) { row.push(t); t += ln[i] === " " && ln[i - 1] === " " ? 0.003 : 0.011 + r() * 0.008; } out.push(row); t += 0.14; });
+  return { rows: out, end: t };
+})();
+function pyTokens(line) {
+  const re = /("[^"]*"?)|\b(class|def|return|self)\b|\b(\d+)\b|([A-Za-z_]\w*)|(\s+)|(.)/g, out = []; let m;
+  while ((m = re.exec(line))) out.push({ s: m[0], k: m[1] ? "str" : m[2] ? "kw" : m[3] ? "num" : m[4] ? "name" : "p" });
+  return out;
+}
+SCENES.about = { w: 1200, h: 520, dur: 12.5, draw(c, t, S) {
+  c.globalAlpha = fadeAll(t, S.dur);
+  const cp = E.outCubic(range(t, 0.1, 0.6));
+  c.save(); c.translate(0, (1 - cp) * 14); c.globalAlpha *= cp;
+  card(c, 44, 30, 1112, 456);
+  c.fillStyle = rgba(PAL.ink, 0.06); c.beginPath(); c.roundRect(44, 30, 1112, 44, [14, 14, 0, 0]); c.fill();
+  text(c, "about.py", 72, 58, { font: FONT.mono, weight: 600, size: 15 });
+  text(c, "python", 1128, 58, { font: FONT.mono, size: 14, color: PAL.faded, align: "right" });
+  c.restore();
+  const X = 80, Y0 = 112, LH = 31, o = { font: FONT.mono, size: 19 };
+  const cw = measure(c, "M", o);
+  const COL = { kw: PAL.orangeInk, str: PAL.green, num: PAL.blue, name: PAL.ink, p: PAL.faded };
+  let lastX = X, lastY = Y0, typing = false;
+  ABOUT.forEach((ln, li) => {
+    const n = typedCount(ABOUT_TIMES.rows[li], t), y = Y0 + li * LH;
+    if (!n) return;
+    let col = 0;
+    for (const tk of pyTokens(ln)) {
+      const vis = tk.s.slice(0, Math.max(0, n - col));
+      if (vis) text(c, vis, X + col * cw, y, { ...o, color: COL[tk.k], weight: tk.k === "kw" || (tk.k === "name" && li === 0 && tk.s === "Trilochan") ? 600 : 400 });
+      col += tk.s.length;
+    }
+    lastX = X + n * cw; lastY = y;
+    if (n < ln.length) typing = true;
+  });
+  const te = ABOUT_TIMES.end, Y = Y0 + ABOUT.length * LH + 20;
+  // REPL line
+  const repl = ">>> Trilochan().mission()", rt = [...repl].map((_, i) => te + 0.4 + i * 0.035);
+  const rn = typedCount(rt, t);
+  if (rn) { text(c, repl.slice(0, 4), X, Y, { ...o, color: PAL.faded }); text(c, repl.slice(4, rn), X + 4 * cw, Y, { ...o, weight: 600 }); }
+  const outAt = rt[rt.length - 1] + 0.45;
+  if (t < outAt) cursor(c, rn ? X + rn * cw : lastX, rn ? Y : lastY, 19, t, typing || (rn > 0 && rn < repl.length));
+  const op = E.outCubic(range(t, outAt, outAt + 0.6)), mission = "Build AI systems that survive contact with the real world.";
+  const mo = { font: FONT.serif, italic: true, weight: 500, size: 30, track: -0.3 };
+  text(c, mission, X, Y + 48 + (1 - op) * 8, { ...mo, alpha: op });
+  underline(c, X, Y + 60, measure(c, mission, mo), E.inOutCubic(range(t, outAt + 0.5, outAt + 1.3)), 9);
+} };
+
+// 3. TOAP: naive pipelines re-send the transcript; TOAP passes references through a broker.
+SCENES.toap = { w: 1200, h: 600, dur: 12, draw(c, t, S) {
+  c.globalAlpha = fadeAll(t, S.dur);
+  const X = 64;
+  text(c, "RESEARCH  ·  TOAP", X, 60, { font: FONT.mono, weight: 600, size: 15, track: 3.5, color: PAL.orangeInk, alpha: range(t, 0.15, 0.5) });
+  inked(c, "Multi-agent pipelines re-send the whole transcript.", X, 108, E.inOutCubic(range(t, 0.3, 1.3)), { font: FONT.serif, weight: 600, size: 36, track: -0.6 });
+  const act2 = range(t, 4.6, 5.2);
+  const sub1 = "Naive: every hop forwards everything before it, so cost compounds with depth.";
+  const sub2 = "TOAP: agents share references through a broker; the context is sent once.";
+  text(c, sub1, X, 144, { size: 19, color: PAL.faded, alpha: range(t, 1.0, 1.4) * (1 - act2) });
+  text(c, sub2, X, 144, { size: 19, color: PAL.faded, alpha: act2 });
+  const xs = [190, 450, 710, 970], AY = 330;
+  // arrows between agents
+  c.save(); c.strokeStyle = rgba(PAL.ink, 0.5); c.lineWidth = 1.8; c.lineCap = "round";
+  for (let i = 0; i < 3; i++) {
+    const p = E.inOutCubic(range(t, 1.3 + i * 0.15, 1.8 + i * 0.15)), a = xs[i] + 70, b = xs[i + 1] - 70;
+    partial(c, (q) => ({ x: lerp(a, b, q), y: AY }), p, 4);
+    if (p >= 1) { c.beginPath(); c.moveTo(b - 9, AY - 6); c.lineTo(b, AY); c.lineTo(b - 9, AY + 6); c.stroke(); }
+  }
+  c.restore();
+  // naive: transcript slips pile up above each agent (agent i forwards i + 1 slips)
+  const collapse = E.inOutCubic(range(t, 4.6, 5.4));
+  xs.forEach((x, i) => {
+    for (let k = 0; k <= i; k++) {
+      const at = 1.8 + i * 0.55 + k * 0.08, p = spring(t - at, { stiffness: 220, damping: 18 });
+      if (p <= 0) continue;
+      const sy = AY - 52 - k * 17 - (1 - p) * 40, ty = 470;
+      const y = lerp(sy, ty, collapse), x2 = lerp(x, 575, collapse);
+      c.save(); c.globalAlpha *= clamp(p) * (1 - collapse * 0.9);
+      c.fillStyle = PAL.card; c.strokeStyle = rgba(PAL.ink, 0.45); c.lineWidth = 1.2;
+      c.beginPath(); c.roundRect(x2 - 46, y - 7, 92, 14, 3); c.fill(); c.stroke();
+      c.fillStyle = rgba(PAL.ink, 0.25); c.fillRect(x2 - 36, y - 1, 50 + ((k * 13) % 20), 2);
+      c.restore();
+    }
+  });
+  // agents
+  xs.forEach((x, i) => {
+    const s = spring(t - 0.9 - i * 0.1, { stiffness: 200, damping: 16 });
+    if (s <= 0) return;
+    c.save(); c.translate(x, AY); c.scale(s, s);
+    card(c, -66, -26, 132, 52, { r: 12 });
+    text(c, `agent ${i + 1}`, 0, 6, { font: FONT.mono, weight: 600, size: 16, align: "center" });
+    c.restore();
+  });
+  // TOAP: the broker holds the context; agents pass small reference chips
+  const bs = spring(t - 5.0, { stiffness: 170, damping: 15 });
+  if (bs > 0) {
+    c.save(); c.translate(575, 470); c.scale(bs, bs);
+    card(c, -150, -30, 300, 60, { fill: PAL.ink, stroke: PAL.ink, r: 12 });
+    text(c, "broker  ·  shared context", 0, 6, { font: FONT.mono, weight: 600, size: 15, color: PAL.paper, align: "center" });
+    c.restore();
+    c.save(); c.strokeStyle = rgba(PAL.ink, 0.3); c.setLineDash([3, 5]); c.lineWidth = 1.3;
+    xs.forEach((x, i) => partial(c, (q) => ({ x: lerp(x, lerp(575, x, 0.3), q), y: lerp(AY + 28, 440, q) }), E.inOutCubic(range(t, 5.3 + i * 0.06, 5.8 + i * 0.06)), 8));
+    c.restore();
+  }
+  const chips = range(t, 5.8, 6.0);
+  if (chips > 0) for (let i = 0; i < 3; i++) {
+    const ph = ((t - 5.8) * 0.6 + i * 0.33) % 1, x = lerp(xs[i] + 70, xs[i + 1] - 80, E.inOutSine(ph));
+    c.save(); c.globalAlpha *= chips;
+    c.fillStyle = PAL.orange; c.strokeStyle = PAL.ink; c.lineWidth = 1.3;
+    c.beginPath(); c.roundRect(x - 25, AY - 40, 50, 22, 11); c.fill(); c.stroke();
+    text(c, "ref", x, AY - 24, { font: FONT.mono, weight: 600, size: 12, align: "center" });
+    c.restore();
+  }
+  // the comparison: tokens forwarded, naive vs reference (ratio from the paper: about 1.9x)
+  const MX = 820, MY = 520, MW = 300;
+  const m1 = E.inOutCubic(range(t, 2.0, 4.2)), m2 = E.inOutCubic(range(t, 6.0, 7.2)) / 1.9;
+  const ml = range(t, 1.9, 2.2);
+  text(c, "tokens forwarded", MX, MY - 34, { font: FONT.mono, size: 13, color: PAL.faded, alpha: ml });
+  [["naive", m1, PAL.faded], ["TOAP", m2, PAL.orange]].forEach(([lab, v, col], k) => {
+    const y = MY - 16 + k * 26;
+    c.save(); c.globalAlpha *= ml * (k === 0 ? 1 : range(t, 5.9, 6.1));
+    text(c, lab, MX, y + 10, { font: FONT.mono, weight: 600, size: 13 });
+    c.fillStyle = rgba(PAL.ink, 0.08); c.fillRect(MX + 60, y, MW, 12);
+    c.fillStyle = col; c.fillRect(MX + 60, y, MW * v, 12);
+    c.restore();
+  });
+  stamp(c, "≈ 1.9× FEWER TOKENS", 300, 526, t - 7.4, { size: 16, rot: -3 });
+  stamp(c, "40/40 INJECTIONS BLOCKED", 300 + 330, 530, t - 8.1, { size: 14, rot: 2, color: PAL.ink });
+  text(c, "diagram illustrative  ·  results: Sharma (2026), doi:10.5281/zenodo.20671083", 1136, 588,
+    { font: FONT.mono, size: 12, color: PAL.faded, align: "right", alpha: range(t, 8.6, 9.2) });
+} };
+
+// 4. CONTEXTFORGE: sessions forget; a memory graph remembers, answers, and refuses an injection.
+const CF_NODES = [
+  { nm: "decision", x: 640, y: 250 }, { nm: "tradeoff", x: 800, y: 205 }, { nm: "schema", x: 960, y: 250 },
+  { nm: "bug fix", x: 700, y: 380 }, { nm: "API", x: 870, y: 345 }, { nm: "test", x: 1040, y: 380 }, { nm: "note", x: 1080, y: 290 },
+];
+const CF_EDGES = [[0, 1], [1, 2], [0, 3], [1, 4], [2, 4], [4, 5], [2, 6], [3, 4], [5, 6]];
+const CF_HIT = [0, 1, 2];   // the nodes that answer the query
+SCENES.contextforge = { w: 1200, h: 600, dur: 13.5, draw(c, t, S) {
+  c.globalAlpha = fadeAll(t, S.dur);
+  const X = 64;
+  text(c, "RESEARCH  ·  CONTEXTFORGE", X, 60, { font: FONT.mono, weight: 600, size: 15, track: 3.5, color: PAL.orangeInk, alpha: range(t, 0.15, 0.5) });
+  inked(c, "Every AI coding session starts blank.", X, 108, E.inOutCubic(range(t, 0.3, 1.2)), { font: FONT.serif, weight: 600, size: 36, track: -0.6 });
+  const a2 = range(t, 3.3, 3.8);
+  text(c, "Decisions and tradeoffs from last week are gone.", X, 144, { size: 19, color: PAL.faded, alpha: range(t, 0.9, 1.3) * (1 - a2) });
+  text(c, "ContextForge keeps them in a queryable memory graph.", X, 144, { size: 19, color: PAL.faded, alpha: a2 });
+  // three sessions: notes appear, then are wiped away
+  for (let i = 0; i < 3; i++) {
+    const s = spring(t - 0.8 - i * 0.25, { stiffness: 200, damping: 17 });
+    if (s <= 0) continue;
+    const x = X + i * 0 , y = 200 + i * 112;
+    c.save(); c.translate(x + 110, y + 40); c.scale(s, s); c.translate(-110, -40);
+    card(c, 0, 0, 220, 84, { r: 12 });
+    text(c, `session ${i + 1}`, 16, 26, { font: FONT.mono, weight: 600, size: 14 });
+    const wipe = range(t, 2.1 + i * 0.25, 2.6 + i * 0.25);
+    for (let k = 0; k < 3; k++) {
+      const w = [150, 120, 170][k] * E.outCubic(range(t, 1.1 + i * 0.25 + k * 0.08, 1.5 + i * 0.25 + k * 0.08));
+      c.fillStyle = rgba(PAL.ink, 0.3);
+      c.fillRect(16 + w * wipe, 40 + k * 12, Math.max(0, w * (1 - wipe)), 4);
+    }
+    c.restore();
+  }
+  const note = range(t, 2.7, 3.2);
+  if (note > 0) { c.save(); c.translate(X + 236, 320); c.rotate(-0.08); inked(c, "gone by next week", 0, 0, note, { font: FONT.hand, weight: 600, size: 30, color: PAL.orangeInk, nib: PAL.orangeInk }); c.restore(); }
+  // the memory graph
+  const q = range(t, 6.6, 7.0), dim = (i) => (q > 0 && !CF_HIT.includes(i) ? 1 - 0.65 * q : 1);
+  c.save(); c.lineCap = "round";
+  CF_EDGES.forEach(([a, b], k) => {
+    const p = E.inOutCubic(range(t, 4.2 + k * 0.1, 4.7 + k * 0.1)), A = CF_NODES[a], B = CF_NODES[b];
+    const hit = CF_HIT.includes(a) && CF_HIT.includes(b);
+    c.strokeStyle = hit && q > 0 ? rgba(PAL.orange, 0.4 + 0.6 * q) : rgba(PAL.ink, 0.35 * Math.min(dim(a), dim(b)));
+    c.lineWidth = hit && q > 0 ? 3 : 1.6;
+    partial(c, (u) => ({ x: lerp(A.x, B.x, u), y: lerp(A.y, B.y, u) }), p, 10);
+  });
+  c.restore();
+  CF_NODES.forEach((nd, i) => {
+    const s = spring(t - 3.7 - i * 0.12, { stiffness: 200, damping: 15 });
+    if (s <= 0) return;
+    const hit = CF_HIT.includes(i) && q > 0, bob = noise1(t * 0.6 + i * 9) * 2.5;
+    c.save(); c.translate(nd.x, nd.y + bob); c.scale(s, s); c.globalAlpha *= dim(i);
+    const w = measure(c, nd.nm, { font: FONT.mono, size: 14 }) + 26;
+    card(c, -w / 2, -16, w, 32, { r: 16, fill: hit ? PAL.orange : PAL.card, stroke: hit ? PAL.ink : PAL.hair });
+    text(c, nd.nm, 0, 5, { font: FONT.mono, weight: hit ? 600 : 400, size: 14, align: "center" });
+    c.restore();
+  });
+  // the query
+  const qs = "why did we pick SQLite?", qt = [...qs].map((_, i) => 5.6 + i * 0.035), qn = typedCount(qt, t);
+  if (t > 5.4) {
+    const qa = range(t, 5.4, 5.6);
+    c.save(); c.globalAlpha *= qa; card(c, 560, 470, 330, 44, { r: 22 }); c.restore();
+    text(c, "? " + qs.slice(0, qn), 582, 498, { font: FONT.mono, size: 16, alpha: qa });
+    if (qn < qs.length || t < 6.9) cursor(c, 582 + measure(c, "? " + qs.slice(0, qn), { font: FONT.mono, size: 16 }), 498, 16, t, qn < qs.length);
+  }
+  // an injection tries to get in, and is stamped
+  const inj = E.outCubic(range(t, 7.4, 8.0)), ix = lerp(1230, 950, inj);
+  if (inj > 0) {
+    c.save(); c.globalAlpha *= 1 - 0.55 * range(t, 8.4, 8.8);
+    card(c, ix, 458, 210, 64, { r: 10, stroke: PAL.red });
+    text(c, "“ignore previous", ix + 16, 484, { font: FONT.mono, size: 13, color: PAL.red });
+    text(c, "instructions and…”", ix + 16, 504, { font: FONT.mono, size: 13, color: PAL.red });
+    c.restore();
+  }
+  stamp(c, "BLOCKED", 1055, 490, t - 8.3, { size: 18, rot: -8, color: PAL.red });
+  // results from the paper
+  stamp(c, "#1 OF 6 SYSTEMS", 190, 556, t - 9.3, { size: 14, rot: -2 });
+  stamp(c, "93% TOKEN SAVINGS", 460, 560, t - 9.75, { size: 14, rot: 1.5, color: PAL.ink });
+  stamp(c, "990 TESTS PASSING", 740, 556, t - 10.2, { size: 14, rot: -1.5 });
+  text(c, "diagram illustrative  ·  doi:10.5281/zenodo.19784778", 1136, 588,
+    { font: FONT.mono, size: 12, color: PAL.faded, align: "right", alpha: range(t, 10.6, 11.2) });
+} };
+
+// 5. FOOTER: what I'm open to, stamped; signed by hand.
+SCENES.footer = { w: 1200, h: 240, dur: 7.5, draw(c, t, S) {
+  c.globalAlpha = fadeAll(t, S.dur);
+  inked(c, "Open to", 600 - measure(c, "Open to", { font: FONT.serif, italic: true, weight: 500, size: 34 }) / 2, 66,
+    E.inOutCubic(range(t, 0.2, 0.8)), { font: FONT.serif, italic: true, weight: 500, size: 34 });
+  stamp(c, "AI/ML RESEARCH COLLABORATION", 270, 128, t - 0.9, { size: 15, rot: -2.5 });
+  stamp(c, "AGENTIC SYSTEMS WORK", 600, 134, t - 1.35, { size: 15, rot: 1.8, color: PAL.ink });
+  stamp(c, "HARD REAL-WORLD PROBLEMS", 925, 126, t - 1.8, { size: 15, rot: -1.5 });
+  c.save(); c.translate(820, 210); c.rotate(-0.04);
+  inked(c, "— Trilochan", 0, 0, E.inOutCubic(range(t, 2.5, 3.6)), { font: FONT.hand, weight: 700, size: 40, color: PAL.ink, nib: PAL.orange });
+  c.restore();
+} };
+
+/* ---------------- compositor, contract, preview ---------------- */
+const S = SCENES[SCENE];
+const cv = document.getElementById("c"); cv.width = S.w; cv.height = S.h;
+const ctx = cv.getContext("2d");
+let PAPER = null;
+function draw(t) {
+  t = clamp(t, 0, S.dur);
+  ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.globalAlpha = 1; ctx.letterSpacing = "0px";
+  ctx.drawImage(PAPER, 0, 0);
+  ctx.save(); S.draw(ctx, t, S); ctx.restore();
+}
+window.__video = {
+  width: S.w, height: S.h, fps: 20, duration: S.dur,
+  ready: (async () => {
+    await Promise.allSettled(['600 40px "Fraunces"', 'italic 500 40px "Fraunces"', '400 20px "PSans"', '400 20px "PMono"',
+      '600 20px "PMono"', '600 40px "Caveat"', '700 40px "Caveat"'].map((f) => document.fonts.load(f)));
+    await document.fonts.ready;
+    PAPER = paperTexture(S.w, S.h, 7);
+    draw(0);
+  })(),
+  seek(t) { draw(t); },
+};
+if (!new URLSearchParams(location.search).has("render")) {
+  document.body.classList.add("preview");
+  window.__video.ready.then(() => { const t0 = performance.now(); const tick = () => { draw(((performance.now() - t0) / 1000) % S.dur); requestAnimationFrame(tick); }; tick(); });
+}
+</script>
+</body>
+</html>

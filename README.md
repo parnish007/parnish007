@@ -1,8 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=190&section=header&text=Trilochan+Sharma&fontSize=52&fontColor=fff&animation=fadeIn&fontAlignY=36&desc=AI+Researcher+and+Engineer+building+agentic+systems+end+to+end&descAlignY=58&descSize=17" width="100%" />
-
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&pause=1200&color=FF6B35&center=true&vCenter=true&width=640&lines=2x+published+research%2C+both+with+Zenodo+DOIs;Agentic+memory+%2B+multi-agent+protocols+%2B+RAG;I+ship+the+whole+pipeline%2C+research+to+prod)](https://git.io/typing-svg)
+<img src="assets/hero.gif" width="100%" alt="Trilochan Sharma, aka parnish007: AI researcher and engineer from Nepal, building agentic systems end to end. Two published papers, one npm package, two live products." />
 
 <br/>
 
@@ -18,6 +16,11 @@
 ---
 
 ## 🧬 About
+
+<img src="assets/about.gif" width="100%" alt="The Trilochan class typing itself: location Nepal, role AI/ML Researcher and Full-Stack Engineer, mission: build AI systems that survive contact with the real world." />
+
+<details>
+<summary><b>📋 As text</b></summary>
 
 ```python
 class Trilochan:
@@ -38,6 +41,8 @@ class Trilochan:
         return "Build AI systems that survive contact with the real world"
 ```
 
+</details>
+
 I learn whatever the problem requires and own the full pipeline — from data and training to deployment and monitoring. Currently CS undergrad at Kathmandu University, doing independent research on the side.
 
 ---
@@ -50,6 +55,10 @@ I learn whatever the problem requires and own the full pipeline — from data an
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20671083-1682D4?style=for-the-badge&logo=zenodo&logoColor=white)](https://doi.org/10.5281/zenodo.20671083)
 [![Code](https://img.shields.io/badge/Code-TOAP-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/parnish007/TOAP)
+
+<br/><br/>
+
+<img src="assets/toap.gif" width="100%" alt="TOAP explained: in a naive pipeline every agent re-sends the whole transcript; with TOAP agents pass references through a broker. About 1.9 times fewer tokens, 40 of 40 injections blocked." />
 
 </div>
 
@@ -92,6 +101,10 @@ Multi-agent LLM pipelines forward a growing transcript into every downstream pro
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.19784778-1682D4?style=for-the-badge&logo=zenodo&logoColor=white)](https://doi.org/10.5281/zenodo.19784778)
 [![Code](https://img.shields.io/badge/Code-contextforge-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/parnish007/contextforge)
+
+<br/><br/>
+
+<img src="assets/contextforge.gif" width="100%" alt="ContextForge explained: coding sessions forget; a memory graph keeps decisions and tradeoffs, answers a query, and blocks a prompt injection. Number 1 of 6 systems, 93 percent token savings, 990 tests passing." />
 
 </div>
 
@@ -293,10 +306,10 @@ Production-grade scene classification and image organization. MobileNetV2 transf
 
 <div align="center">
 
-**Open to:** AI/ML research collaboration · agentic systems work · hard real-world problems
+<img src="assets/footer.gif" width="100%" alt="Open to: AI/ML research collaboration, agentic systems work, hard real-world problems. Signed, Trilochan." />
 
 [LinkedIn](https://www.linkedin.com/in/trilochan-sharma-995851370/) · [Email](mailto:parnishklpo@gmail.com) · [Portfolio](https://parnish-aka-trilochan.vercel.app) · [Research](https://doi.org/10.5281/zenodo.19784778)
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=110&section=footer" width="100%"/>
+<sub>Animations drawn entirely in code: <a href="assets/src">assets/src</a></sub>
 
 </div>
